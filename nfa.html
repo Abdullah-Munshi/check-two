@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <title>Stablecoin Labs - Nfa</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS  -->
+    <link rel="stylesheet" href="./assets/css/slick.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <!-- offcanvas menu start -->
+    <div id="offcanvas" class="MuiBox-root css-uvv6zi">
+      <button id="close-offcanvas">
+        <svg
+          width="20"
+          height="20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M18.2 18.2 2 2M2 18.2 18.2 2"
+            stroke="#fff"
+            stroke-width="3"
+            stroke-miterlimit="10"
+          ></path>
+        </svg>
+      </button>
+      <ul class="MuiList-root MuiList-padding css-1kzixr0">
+        <li class="MuiListItem-root MuiListItem-gutters css-1djrxkt">
+          <a
+            aria-current="page"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-10ukuoc"
+            href="liquidity-providers"
+            >Liquidity Providers</a>
+        </li>
+        <li class="MuiListItem-root MuiListItem-gutters css-1djrxkt">
+          <a
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-10ukuoc"
+            href="validator-insurance"
+            >Validator Insurance</a>
+        </li>
+        <li class="MuiListItem-root MuiListItem-gutters css-1djrxkt">
+          <a
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-10ukuoc"
+            href="research"
+            >Research</a>
+        </li>
+        <li class="MuiListItem-root MuiListItem-gutters css-1djrxkt">
+          <a
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-10ukuoc"
+            href="connect"
+            >Connect</a>
+        </li>
+      </ul>
+  
+      <div class="MuiBox-root css-9xf4ju">
+        <a
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1rt86za"
+          href="/terms-of-use/"
+          >Terms of Use_</a
+        ><a
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1rt86za"
+          href="/data-protection-and-privacy-policy/"
+          >Privacy Policy_</a
+        ><a
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1rt86za"
+          href="/nfa/"
+          >Disclaimers_</a
+        >
+      </div>
+    </div>
+    <!-- offcanvas menu end -->
+    <div class="extra-header" id="extra-header">
+      <a href="/" class="logo"><img src="./assets/img/logo.svg" alt="" /></a>
+      <button id="offcanvas-trigger" class="navButton">
+        <svg
+          width="20"
+          height="12"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path fill="#fff" d="M0 0h20v2H0zM0 5h20v2H0zM0 10h20v2H0z"></path>
+        </svg>
+      </button>
+    </div>
+    <div id="gatsby-focus-wrapper">
+      <main class="MuiBox-root css-1xxpgu6">
+        <header
+          class="main-header MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionAbsolute css-zbea8d"
+        >
+          <a href="/" class="logo"
+            ><img src="./assets/img/logo.svg" alt=""
+          /></a>
+          <div class="MuiBox-root css-0">
+            <ul class="MuiBox-root css-p4lf9x">
+              <li class="MuiBox-root css-186deyi">
+                <span class="MuiBox-root css-13dr6ve"
+                  ><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-hwcyq6" href="liquidity-providers">Liquidity Providers</a>
+                </span>
+              </li>
+              <li class="MuiBox-root css-186deyi">
+                <span class="MuiBox-root css-13dr6ve"
+                  ><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-hwcyq6" href="validator-insurance">Validity Insurance</a>
+                </span>
+              </li>
+              <li class="MuiBox-root css-0">
+                <a
+                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-hwcyq6"
+                  href="research"
+                  >Research</a>
+              </li>
+              <li class="MuiBox-root css-0">
+                <a
+                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-hwcyq6"
+                  href="connect"
+                  >Connect</a>
+              </li>
+            </ul>
+          </div>
+        </header>
+        <style data-emotion="css uvv6zi">
+          .css-uvv6zi {
+            position: fixed;
+            right: -100%;
+            height: 100%;
+            width: 100%;
+            max-width: 820px;
+            z-index: 4;
+            background: #091a3d;
+            background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzIiIGhlaWdodD0iMTQyOCIgdmlld0JveD0iMCAwIDcyIDE0MjgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik02MCA0NjJWNTUwLjc4NkM2MCA1NTkuMDcgNTMuMjg0MyA1NjUuNzg2IDQ1IDU2NS43ODZIMTZDNy43MTU3MyA1NjUuNzg2IDEgNTcyLjUwMiAxIDU4MC43ODZMMSAxNDI3LjUiIHN0cm9rZT0iIzRCNjA4RCIvPgo8cGF0aCBkPSJNNjAgMTg0VjEzNUM2MCAxMjYuNzE2IDUzLjI4NDMgMTIwIDQ1IDEyMEgyM0MxNC43MTU3IDEyMCA4IDExMy4yODQgOCAxMDVWNDIiIHN0cm9rZT0iIzRCNjA4RCIvPgo8cGF0aCBkPSJNNjAuMDgzNSAxNjlMNjAuMDgzNSA1MTMiIHN0cm9rZT0iIzRCNjA4RCIvPgo8ZWxsaXBzZSByeD0iMTAuNTg3NSIgcnk9IjEwLjUiIHRyYW5zZm9ybT0ibWF0cml4KDEgMCAwIC0xIDYwLjU4NzUgMTg4LjUpIiBmaWxsPSIjMEMxRjQ3Ii8+CjxwYXRoIGQ9Ik02Ni4xNDE1IDE4OC41QzY2LjE0MTUgMTg1LjQ3IDYzLjY2MjcgMTgzIDYwLjU4NzQgMTgzQzU3LjUxMiAxODMgNTUuMDMzMiAxODUuNDcgNTUuMDMzMiAxODguNUM1NS4wMzMyIDE5MS41MyA1Ny41MTIgMTk0IDYwLjU4NzQgMTk0QzYzLjY2MjcgMTk0IDY2LjE0MTUgMTkxLjUzIDY2LjE0MTUgMTg4LjVaIiBmaWxsPSIjMEMxRjQ3IiBzdHJva2U9IiMzODRFN0MiIHN0cm9rZS13aWR0aD0iMiIvPgo8ZWxsaXBzZSByeD0iMTAuNTg3NSIgcnk9IjEwLjUiIHRyYW5zZm9ybT0ibWF0cml4KDEgMCAwIC0xIDYwLjU4NzUgNDUyLjUpIiBmaWxsPSIjMEMxRjQ3Ii8+CjxwYXRoIGQ9Ik02Ni4xNDE1IDQ1Mi41QzY2LjE0MTUgNDQ5LjQ3IDYzLjY2MjcgNDQ3IDYwLjU4NzQgNDQ3QzU3LjUxMiA0NDcgNTUuMDMzMiA0NDkuNDcgNTUuMDMzMiA0NTIuNUM1NS4wMzMyIDQ1NS41MyA1Ny41MTIgNDU4IDYwLjU4NzQgNDU4QzYzLjY2MjcgNDU4IDY2LjE0MTUgNDU1LjUzIDY2LjE0MTUgNDUyLjVaIiBmaWxsPSIjMEMxRjQ3IiBzdHJva2U9IiMzODRFN0MiIHN0cm9rZS13aWR0aD0iMiIvPgo8cGF0aCBkPSJNOCAyTDggNDIiIHN0cm9rZT0iIzRCNjA4RCIvPgo8cGF0aCBkPSJNMTYgMy43NUwxNiAtNy43NjQwMmUtMDdMMSAtMS4yMDczMWUtMDdMMSAzLjc1TDE2IDMuNzVaIiBmaWxsPSIjMUNFN0MyIi8+Cjwvc3ZnPgo=),
+              url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTA1IiBoZWlnaHQ9Ijc1MCIgdmlld0JveD0iMCAwIDkwNSA3NTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxnIG9wYWNpdHk9IjAuMzUiPgo8cGF0aCBkPSJNMTQwMC4xNCA0MS40OTIyQzEzNDEuOTUgLTk0Ljk5NSAxMjA0LjY2IC0xNzguOTk0IDEwOTMuNSAtMTQ2LjEyNUM5ODIuMzM1IC0xMTMuMjU2IDkzOS4zOTMgMjQuMDM0MSA5OTcuNTg2IDE2MC41MjFDMTA1NS43OCAyOTcuMDA5IDExOTMuMDcgMzgxLjAwOCAxMzA0LjIzIDM0OC4xMzlDMTQxNS40IDMxNS4yNyAxNDU4LjM0IDE3Ny45NzkgMTQwMC4xNCA0MS40OTIyWiIgc3Ryb2tlPSIjMUNFN0MyIiBzdHJva2Utd2lkdGg9IjAuNSIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIi8+CjxwYXRoIGQ9Ik0xMzkyLjA1IDQ0LjY1NDdDMTMzMS43OSAtOTYuNjg0MiAxMTg5LjYyIC0xODMuNjY5IDEwNzQuNSAtMTQ5LjYzMkM5NTkuMzg2IC0xMTUuNTk0IDkxNC45MTkgMjYuNTc2IDk3NS4xOCAxNjcuOTE1QzEwMzUuNDQgMzA5LjI1NCAxMTc3LjYxIDM5Ni4yMzkgMTI5Mi43MyAzNjIuMjAxQzE0MDcuODQgMzI4LjE2NCAxNDUyLjMxIDE4NS45OTQgMTM5Mi4wNSA0NC42NTQ3WiIgc3Ryb2tlPSIjMUNFN0MyIiBzdHJva2Utd2lkdGg9IjAuNSIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIi8+CjxwYXRoIGQ9Ik0xMzgzLjk1IDQ3LjgxNjJDMTMyMS42MiAtOTguMzc0MyAxMTc0LjU3IC0xODguMzQ1IDEwNTUuNTEgLTE1My4xMzlDOTM2LjQzOSAtMTE3LjkzNCA4OTAuNDQ1IDI5LjExNyA5NTIuNzc0IDE3NS4zMDdDMTAxNS4xIDMyMS40OTggMTE2Mi4xNSA0MTEuNDY5IDEyODEuMjIgMzc2LjI2M0MxNDAwLjI5IDM0MS4wNTcgMTQ0Ni4yOCAxOTQuMDA3IDEzODMuOTUgNDcuODE2MloiIHN0cm9rZT0iIzFDRTdDMiIgc3Ryb2tlLXdpZHRoPSIwLjUiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIvPgo8cGF0aCBkPSJNMTM3NS44NiA1MC45Nzc3QzEzMTEuNDYgLTEwMC4wNjQgMTE1OS41MyAtMTkzLjAyMSAxMDM2LjUxIC0xNTYuNjQ3QzkxMy40OTEgLTEyMC4yNzMgODY1Ljk3IDMxLjY1NzkgOTMwLjM2OSAxODIuN0M5OTQuNzY3IDMzMy43NDIgMTE0Ni43IDQyNi42OTkgMTI2OS43MiAzOTAuMzI1QzEzOTIuNzMgMzUzLjk1MSAxNDQwLjI1IDIwMi4wMiAxMzc1Ljg2IDUwLjk3NzdaIiBzdHJva2U9IiMxQ0U3QzIiIHN0cm9rZS13aWR0aD0iMC41IiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiLz4KPHBhdGggZD0iTTEzNjcuNzcgNTQuMTM0NUMxMzAxLjMgLTEwMS43NjMgMTE0NC40OSAtMTk3LjcwOCAxMDE3LjUyIC0xNjAuMTY1Qzg5MC41NDQgLTEyMi42MjIgODQxLjQ5NSAzNC4xOTM2IDkwNy45NjQgMTkwLjA5MUM5NzQuNDMzIDM0NS45ODkgMTEzMS4yNSA0NDEuOTM0IDEyNTguMjIgNDA0LjM5MUMxMzg1LjE5IDM2Ni44NDcgMTQzNC4yNCAyMTAuMDMyIDEzNjcuNzcgNTQuMTM0NVoiIHN0cm9rZT0iIzFDRTdDMiIgc3Ryb2tlLXdpZHRoPSIwLjUiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIvPgo8cGF0aCBkPSJNMTM1OS42OCA1Ny4yOTZDMTI5MS4xNCAtMTAzLjQ1MyAxMTI5LjQ0IC0yMDIuMzg0IDk5OC41MjEgLTE2My42NzNDODY3LjU5NyAtMTI0Ljk2MSA4MTcuMDIyIDM2LjczNDUgODg1LjU1OSAxOTcuNDg0Qzk1NC4wOTYgMzU4LjIzMyAxMTE1Ljc5IDQ1Ny4xNjQgMTI0Ni43MiA0MTguNDUyQzEzNzcuNjQgMzc5Ljc0MSAxNDI4LjIxIDIxOC4wNDUgMTM1OS42OCA1Ny4yOTZaIiBzdHJva2U9IiMxQ0U3QzIiIHN0cm9rZS13aWR0aD0iMC41IiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiLz4KPHBhdGggZD0iTTEzNTEuNTggNjAuNDU3NUMxMjgwLjk3IC0xMDUuMTQzIDExMTQuNCAtMjA3LjA2IDk3OS41MjQgLTE2Ny4xOEM4NDQuNjQ4IC0xMjcuMyA3OTIuNTQ3IDM5LjI3NTUgODYzLjE1MyAyMDQuODc2QzkzMy43NTggMzcwLjQ3NyAxMTAwLjMzIDQ3Mi4zOTQgMTIzNS4yMSA0MzIuNTE0QzEzNzAuMDkgMzkyLjYzNCAxNDIyLjE5IDIyNi4wNTkgMTM1MS41OCA2MC40NTc1WiIgc3Ryb2tlPSIjMUNFN0MyIiBzdHJva2Utd2lkdGg9IjAuNSIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIi8+CjxwYXRoIGQ9Ik0xMzQzLjQ4IDYzLjYxOTFDMTI3MC44MSAtMTA2LjgzNCAxMDk5LjM1IC0yMTEuNzM2IDk2MC41MjggLTE3MC42ODhDODIxLjcwMSAtMTI5LjYzOSA3NjguMDczIDQxLjgxNjUgODQwLjc0NyAyMTIuMjY5QzkxMy40MjEgMzgyLjcyMiAxMDg0Ljg4IDQ4Ny42MjQgMTIyMy43IDQ0Ni41NzZDMTM2Mi41MyA0MDUuNTI3IDE0MTYuMTYgMjM0LjA3MiAxMzQzLjQ4IDYzLjYxOTFaIiBzdHJva2U9IiMxQ0U3QzIiIHN0cm9rZS13aWR0aD0iMC41IiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiLz4KPHBhdGggZD0iTTEzMzUuMzkgNjYuNzgyMUMxMjYwLjY1IC0xMDguNTIyIDEwODQuMzEgLTIxNi40MTEgOTQxLjUzMSAtMTc0LjE5NEM3OTguNzUzIC0xMzEuOTc3IDc0My41OTkgNDQuMzU5IDgxOC4zNDIgMjE5LjY2M0M4OTMuMDg0IDM5NC45NjcgMTA2OS40MiA1MDIuODU2IDEyMTIuMiA0NjAuNjM5QzEzNTQuOTggNDE4LjQyMiAxNDEwLjEzIDI0Mi4wODYgMTMzNS4zOSA2Ni43ODIxWiIgc3Ryb2tlPSIjMUNFN0MyIiBzdHJva2Utd2lkdGg9IjAuNSIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIi8+CjxwYXRoIGQ9Ik0xMzI3LjI5IDY5Ljk0MzZDMTI1MC40OCAtMTEwLjIxMiAxMDY5LjI3IC0yMjEuMDg3IDkyMi41MzYgLTE3Ny43MDFDNzc1LjgwNiAtMTM0LjMxNiA3MTkuMTI1IDQ2Ljg5OTkgNzk1LjkzNyAyMjcuMDU2Qzg3Mi43NDggNDA3LjIxMiAxMDUzLjk2IDUxOC4wODYgMTIwMC42OSA0NzQuNzAxQzEzNDcuNDIgNDMxLjMxNSAxNDA0LjEgMjUwLjEgMTMyNy4yOSA2OS45NDM2WiIgc3Ryb2tlPSIjMUNFN0MyIiBzdHJva2Utd2lkdGg9IjAuNSIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIi8+CjxwYXRoIGQ9Ik0xMzE5LjIgNzMuMTA1MkMxMjQwLjMyIC0xMTEuOTAyIDEwNTQuMjIgLTIyNS43NjMgOTAzLjUzOSAtMTgxLjIwOUM3NTIuODU4IC0xMzYuNjU1IDY5NC42NTEgNDkuNDQwOSA3NzMuNTMxIDIzNC40NDhDODUyLjQxMSA0MTkuNDU2IDEwMzguNTEgNTMzLjMxNiAxMTg5LjE5IDQ4OC43NjJDMTMzOS44NyA0NDQuMjA5IDEzOTguMDggMjU4LjExMyAxMzE5LjIgNzMuMTA1MloiIHN0cm9rZT0iIzFDRTdDMiIgc3Ryb2tlLXdpZHRoPSIwLjUiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIvPgo8cGF0aCBkPSJNMTMxMS4xIDc2LjI2NjdDMTIzMC4xNSAtMTEzLjU5MiAxMDM5LjE4IC0yMzAuNDM5IDg4NC41NDMgLTE4NC43MTdDNzI5LjkxIC0xMzguOTk0IDY3MC4xNzcgNTEuOTgxOSA3NTEuMTI1IDI0MS44NDFDODMyLjA3MyA0MzEuNyAxMDIzLjA1IDU0OC41NDYgMTE3Ny42OCA1MDIuODI0QzEzMzIuMzIgNDU3LjEwMiAxMzkyLjA1IDI2Ni4xMjYgMTMxMS4xIDc2LjI2NjdaIiBzdHJva2U9IiMxQ0U3QzIiIHN0cm9rZS13aWR0aD0iMC41IiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiLz4KPHBhdGggZD0iTTEzMDMgNzkuNDI4M0MxMjE5Ljk5IC0xMTUuMjgyIDEwMjQuMTMgLTIzNS4xMTUgODY1LjU0NyAtMTg4LjIyNEM3MDYuOTYzIC0xNDEuMzM0IDY0NS43MDMgNTQuNTIyOCA3MjguNzIgMjQ5LjIzNEM4MTEuNzM3IDQ0My45NDQgMTAwNy41OSA1NjMuNzc2IDExNjYuMTggNTE2Ljg4NkMxMzI0Ljc2IDQ2OS45OTUgMTM4Ni4wMiAyNzQuMTM5IDEzMDMgNzkuNDI4M1oiIHN0cm9rZT0iIzFDRTdDMiIgc3Ryb2tlLXdpZHRoPSIwLjUiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIvPgo8cGF0aCBkPSJNMTI5NC45MiA4Mi41ODc4QzEyMDkuODMgLTExNi45NzUgMTAwOS4wOSAtMjM5Ljc5MyA4NDYuNTU4IC0xOTEuNzM0QzY4NC4wMjIgLTE0My42NzUgNjIxLjIzNiA1Ny4wNjE3IDcwNi4zMjEgMjU2LjYyNEM3OTEuNDA2IDQ1Ni4xODcgOTkyLjE0MyA1NzkuMDA0IDExNTQuNjggNTMwLjk0NkMxMzE3LjIxIDQ4Mi44ODcgMTM4MCAyODIuMTUgMTI5NC45MiA4Mi41ODc4WiIgc3Ryb2tlPSIjMUNFN0MyIiBzdHJva2Utd2lkdGg9IjAuNSIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIi8+CjxwYXRoIGQ9Ik0xMjg2LjgyIDg1Ljc0OTRDMTE5OS42NiAtMTE4LjY2NSA5OTQuMDQ4IC0yNDQuNDY4IDgyNy41NjEgLTE5NS4yNDFDNjYxLjA3NCAtMTQ2LjAxNCA1OTYuNzYxIDU5LjYwMjggNjgzLjkxNSAyNjQuMDE3Qzc3MS4wNjkgNDY4LjQzMSA5NzYuNjg2IDU5NC4yMzUgMTE0My4xNyA1NDUuMDA3QzEzMDkuNjYgNDk1Ljc4IDEzNzMuOTcgMjkwLjE2MyAxMjg2LjgyIDg1Ljc0OTRaIiBzdHJva2U9IiMxQ0U3QzIiIHN0cm9rZS13aWR0aD0iMC41IiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiLz4KPHBhdGggZD0iTTEyNzguNzIgODguOTExQzExODkuNSAtMTIwLjM1NSA5NzkuMDAzIC0yNDkuMTQ0IDgwOC41NjUgLTE5OC43NDlDNjM4LjEyNiAtMTQ4LjM1MyA1NzIuMjg3IDYyLjE0MzggNjYxLjUxIDI3MS40MDlDNzUwLjczMiA0ODAuNjc1IDk2MS4yMjkgNjA5LjQ2NSAxMTMxLjY3IDU1OS4wNjlDMTMwMi4xMSA1MDguNjc0IDEzNjcuOTUgMjk4LjE3NyAxMjc4LjcyIDg4LjkxMVoiIHN0cm9rZT0iIzFDRTdDMiIgc3Ryb2tlLXdpZHRoPSIwLjUiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIvPgo8cGF0aCBkPSJNMTI3MC42MyA5Mi4wNzI0QzExNzkuMzQgLTEyMi4wNDUgOTYzLjk1OSAtMjUzLjgyIDc4OS41NjkgLTIwMi4yNTZDNjE1LjE3OSAtMTUwLjY5MyA1NDcuODEzIDY0LjY4NDcgNjM5LjEwNCAyNzguODAyQzczMC4zOTUgNDkyLjkxOSA5NDUuNzczIDYyNC42OTUgMTEyMC4xNiA1NzMuMTMxQzEyOTQuNTUgNTIxLjU2NyAxMzYxLjkyIDMwNi4xOSAxMjcwLjYzIDkyLjA3MjRaIiBzdHJva2U9IiMxQ0U3QzIiIHN0cm9rZS13aWR0aD0iMC41IiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiLz4KPHBhdGggZD0iTTEyNjIuNTMgOTUuMjM0QzExNjkuMTcgLTEyMy43MzUgOTQ4LjkxNCAtMjU4LjQ5NiA3NzAuNTczIC0yMDUuNzY0QzU5Mi4yMzEgLTE1My4wMzIgNTIzLjMzOSA2Ny4yMjU2IDYxNi42OTkgMjg2LjE5NUM3MTAuMDU4IDUwNS4xNjMgOTMwLjMxNiA2MzkuOTI1IDExMDguNjYgNTg3LjE5M0MxMjg3IDUzNC40NiAxMzU1Ljg5IDMxNC4yMDMgMTI2Mi41MyA5NS4yMzRaIiBzdHJva2U9IiMxQ0U3QzIiIHN0cm9rZS13aWR0aD0iMC41IiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiLz4KPHBhdGggZD0iTTEyNTQuNDMgOTguMzk1NUMxMTU5LjAxIC0xMjUuNDI1IDkzMy44NjkgLTI2My4xNzIgNzUxLjU3NiAtMjA5LjI3MkM1NjkuMjgzIC0xNTUuMzcxIDQ5OC44NjUgNjkuNzY2NiA1OTQuMjkzIDI5My41ODdDNjg5LjcyMSA1MTcuNDA4IDkxNC44NTggNjU1LjE1NSAxMDk3LjE1IDYwMS4yNTRDMTI3OS40NCA1NDcuMzU0IDEzNDkuODYgMzIyLjIxNiAxMjU0LjQzIDk4LjM5NTVaIiBzdHJva2U9IiMxQ0U3QzIiIHN0cm9rZS13aWR0aD0iMC41IiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiLz4KPHBhdGggZD0iTTEyNDYuMzQgMTAxLjU1NkMxMTQ4Ljg1IC0xMjcuMTIgOTE4LjgyNSAtMjY3Ljg1NiA3MzIuNTc3IC0yMTIuNzg2QzU0Ni4zMjkgLTE1Ny43MTYgNDc0LjM4MyA3Mi4zMDU3IDU3MS44ODIgMzAwLjk4MkM2NjkuMzggNTI5LjY1OCA4OTkuNDAyIDY3MC4zOTQgMTA4NS42NSA2MTUuMzI0QzEyNzEuOSA1NjAuMjU0IDEzNDMuODQgMzMwLjIzMiAxMjQ2LjM0IDEwMS41NTZaIiBzdHJva2U9IiMxQ0U3QzIiIHN0cm9rZS13aWR0aD0iMC41IiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiLz4KPHBhdGggZD0iTTEyMzguMjUgMTA0LjcxN0MxMTM4LjY4IC0xMjguODExIDkwMy43OCAtMjcyLjUzMiA3MTMuNTgxIC0yMTYuMjk0QzUyMy4zODEgLTE2MC4wNTUgNDQ5LjkwOSA3NC44NDY2IDU0OS40NzYgMzA4LjM3NEM2NDkuMDQzIDU0MS45MDIgODgzLjk0NSA2ODUuNjI0IDEwNzQuMTQgNjI5LjM4NUMxMjY0LjM0IDU3My4xNDcgMTMzNy44MiAzMzguMjQ1IDEyMzguMjUgMTA0LjcxN1oiIHN0cm9rZT0iIzFDRTdDMiIgc3Ryb2tlLXdpZHRoPSIwLjUiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIvPgo8cGF0aCBkPSJNMTIzMC4xNSAxMDcuODc5QzExMjguNTIgLTEzMC41IDg4OC43MzUgLTI3Ny4yMDggNjk0LjU4NCAtMjE5LjgwMUM1MDAuNDM0IC0xNjIuMzk0IDQyNS40MzUgNzcuMzg3OCA1MjcuMDcxIDMxNS43NjdDNjI4LjcwNiA1NTQuMTQ2IDg2OC40ODggNzAwLjg1NCAxMDYyLjY0IDY0My40NDdDMTI1Ni43OSA1ODYuMDQgMTMzMS43OSAzNDYuMjU4IDEyMzAuMTUgMTA3Ljg3OVoiIHN0cm9rZT0iIzFDRTdDMiIgc3Ryb2tlLXdpZHRoPSIwLjUiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIvPgo8cGF0aCBkPSJNMTIyMi4wNiAxMTEuMDRDMTExOC4zNSAtMTMyLjE5MSA4NzMuNjkxIC0yODEuODg0IDY3NS41ODkgLTIyMy4zMDlDNDc3LjQ4NiAtMTY0LjczNCA0MDAuOTYyIDc5LjkyODcgNTA0LjY2NSAzMjMuMTZDNjA4LjM2OSA1NjYuMzkxIDg1My4wMzIgNzE2LjA4NCAxMDUxLjEzIDY1Ny41MDlDMTI0OS4yNCA1OTguOTM0IDEzMjUuNzYgMzU0LjI3MSAxMjIyLjA2IDExMS4wNFoiIHN0cm9rZT0iIzFDRTdDMiIgc3Ryb2tlLXdpZHRoPSIwLjUiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIvPgo8cGF0aCBkPSJNMTIxMy45NyAxMTQuMkMxMTA4LjE5IC0xMzMuODgzIDg1OC42NTIgLTI4Ni41NjIgNjU2LjU5OSAtMjI2LjgxOEM0NTQuNTQ1IC0xNjcuMDc1IDM3Ni40OTQgODIuNDY3NiA0ODIuMjY2IDMzMC41NUM1ODguMDM5IDU3OC42MzMgODM3LjU4MSA3MzEuMzEyIDEwMzkuNjMgNjcxLjU2OEMxMjQxLjY5IDYxMS44MjUgMTMxOS43NCAzNjIuMjgzIDEyMTMuOTcgMTE0LjJaIiBzdHJva2U9IiMxQ0U3QzIiIHN0cm9rZS13aWR0aD0iMC41IiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiLz4KPHBhdGggZD0iTTEyMDUuODcgMTE3LjM2MUMxMDk4LjAzIC0xMzUuNTczIDg0My42MDcgLTI5MS4yMzggNjM3LjYwMiAtMjMwLjMyNkM0MzEuNTk3IC0xNjkuNDE0IDM1Mi4wMTkgODUuMDA4NSA0NTkuODYgMzM3Ljk0M0M1NjcuNzAxIDU5MC44NzcgODIyLjEyNCA3NDYuNTQyIDEwMjguMTMgNjg1LjYzQzEyMzQuMTMgNjI0LjcxOCAxMzEzLjcxIDM3MC4yOTYgMTIwNS44NyAxMTcuMzYxWiIgc3Ryb2tlPSIjMUNFN0MyIiBzdHJva2Utd2lkdGg9IjAuNSIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIi8+CjxwYXRoIGQ9Ik0xMTk3Ljc3IDEyMC41MjNDMTA4Ny44NyAtMTM3LjI2MyA4MjguNTYyIC0yOTUuOTE0IDYxOC42MDYgLTIzMy44MzRDNDA4LjY0OSAtMTcxLjc1MyAzMjcuNTQ1IDg3LjU0OTUgNDM3LjQ1NSAzNDUuMzM1QzU0Ny4zNjQgNjAzLjEyMSA4MDYuNjY3IDc2MS43NzIgMTAxNi42MiA2OTkuNjkyQzEyMjYuNTggNjM3LjYxMiAxMzA3LjY4IDM3OC4zMDkgMTE5Ny43NyAxMjAuNTIzWiIgc3Ryb2tlPSIjMUNFN0MyIiBzdHJva2Utd2lkdGg9IjAuNSIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIi8+CjxwYXRoIGQ9Ik0xMTg5LjY4IDEyMy42ODRDMTA3Ny43IC0xMzguOTUzIDgxMy41MTggLTMwMC41OSA1OTkuNjEgLTIzNy4zNDFDMzg1LjcwMiAtMTc0LjA5MyAzMDMuMDcxIDkwLjA5MDQgNDE1LjA0OSAzNTIuNzI4QzUyNy4wMjggNjE1LjM2NiA3OTEuMjExIDc3Ny4wMDIgMTAwNS4xMiA3MTMuNzU0QzEyMTkuMDMgNjUwLjUwNSAxMzAxLjY2IDM4Ni4zMjIgMTE4OS42OCAxMjMuNjg0WiIgc3Ryb2tlPSIjMUNFN0MyIiBzdHJva2Utd2lkdGg9IjAuNSIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIi8+CjxwYXRoIGQ9Ik0xMTgxLjU4IDEyNi44NDZDMTA2Ny41NCAtMTQwLjY0MyA3OTguNDczIC0zMDUuMjY2IDU4MC42MTQgLTI0MC44NDlDMzYyLjc1NCAtMTc2LjQzMiAyNzguNTk3IDkyLjYzMTUgMzkyLjY0NCAzNjAuMTIxQzUwNi42OSA2MjcuNjEgNzc1Ljc1NCA3OTIuMjMyIDk5My42MTMgNzI3LjgxNUMxMjExLjQ3IDY2My4zOTggMTI5NS42MyAzOTQuMzM1IDExODEuNTggMTI2Ljg0NloiIHN0cm9rZT0iIzFDRTdDMiIgc3Ryb2tlLXdpZHRoPSIwLjUiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIvPgo8cGF0aCBkPSJNMTE3My40OSAxMzAuMDA4QzEwNTcuMzcgLTE0Mi4zMzMgNzgzLjQyOCAtMzA5Ljk0MiA1NjEuNjE3IC0yNDQuMzU2QzMzOS44MDYgLTE3OC43NzEgMjU0LjEyMyA5NS4xNzI0IDM3MC4yMzggMzY3LjUxM0M0ODYuMzUzIDYzOS44NTQgNzYwLjI5NyA4MDcuNDYyIDk4Mi4xMDggNzQxLjg3N0MxMjAzLjkyIDY3Ni4yOTIgMTI4OS42IDQwMi4zNDggMTE3My40OSAxMzAuMDA4WiIgc3Ryb2tlPSIjMUNFN0MyIiBzdHJva2Utd2lkdGg9IjAuNSIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIi8+CjwvZz4KPC9zdmc+Cg==);
+            background-repeat: no-repeat, no-repeat;
+            border-left: 1px solid #4b608d;
+            overflow: auto;
+          }
+          @media (min-width: 0px) {
+            .css-uvv6zi {
+              padding: 88px 15px 30px 100px;
+              -webkit-background-position: top 88px left 10px, top right;
+              background-position: top 88px left 10px, top right;
+            }
+          }
+          @media (min-width: 992px) {
+            .css-uvv6zi {
+              padding: 88px 15px 30px 168px;
+              -webkit-background-position: top 88px left 48px, top right;
+              background-position: top 88px left 48px, top right;
+            }
+          }
+        </style>
+     
+        <img
+          class="MuiBox-root css-1b54vts"
+          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTM2NSIgaGVpZ2h0PSI3MTEiIHZpZXdCb3g9IjAgMCAxMzY1IDcxMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgb3BhY2l0eT0iMC4zIj4KPHJlY3QgeT0iOTIuNzM5MSIgd2lkdGg9IjE0Mi45NzMiIGhlaWdodD0iNjEuODI2MSIgZmlsbD0iIzBFMjE0NyIvPgo8cmVjdCB4PSIxNzMuODg2IiB5PSIyNzguMjE4IiB3aWR0aD0iNDYzLjY5NiIgaGVpZ2h0PSI2MS44MjYxIiBmaWxsPSIjMEUyMTQ3Ii8+CjxwYXRoIGQ9Ik0xNzMuODg2IDM3MC45NTZINDQwLjUxMVY0MzIuNzgySDE3My44ODZWMzcwLjk1NloiIGZpbGw9IiMwRTIxNDciLz4KPHJlY3QgeD0iMTczLjg4NiIgeT0iNDYzLjY5NiIgd2lkdGg9IjM3OC42ODUiIGhlaWdodD0iNjEuODI2MSIgZmlsbD0iIzBFMjE0NyIvPgo8cmVjdCB4PSIxNzMuODg2IiB5PSI5Mi43MzkxIiB3aWR0aD0iNDg2Ljg4IiBoZWlnaHQ9IjYxLjgyNjEiIGZpbGw9IiMwRTIxNDciLz4KPHJlY3QgeD0iNjY3LjI2IiB5PSIyNzguNDkyIiB3aWR0aD0iNDA1LjczNCIgaGVpZ2h0PSI2MS44MjYxIiBmaWxsPSIjMEUyMTQ3Ii8+CjxyZWN0IHg9IjQ3MS40MjUiIHk9IjM3MC45NTYiIHdpZHRoPSI1MTAuMDY1IiBoZWlnaHQ9IjYxLjgyNjEiIGZpbGw9IiMwRTIxNDciLz4KPHJlY3QgeD0iMTAxMi40IiB5PSIzNzAuOTU2IiB3aWR0aD0iMjgyLjA4MiIgaGVpZ2h0PSI2MS44MjYxIiBmaWxsPSIjMEUyMTQ3Ii8+CjxyZWN0IHg9IjkyLjczOTMiIHk9IjE4NS40NzgiIHdpZHRoPSI0MDUuNzM0IiBoZWlnaHQ9IjYxLjgyNjEiIGZpbGw9IiMwRTIxNDciLz4KPHJlY3QgeD0iOTIuNzM5MyIgeT0iNTU2LjQzNSIgd2lkdGg9IjIzOS41NzYiIGhlaWdodD0iNjEuODI2MSIgZmlsbD0iIzBFMjE0NyIvPgo8cmVjdCB4PSI1ODMuNDgzIiB5PSI0NjMuNjk2IiB3aWR0aD0iMjg1Ljk0NiIgaGVpZ2h0PSI2MS44MjYxIiBmaWxsPSIjMEUyMTQ3Ii8+CjxyZWN0IHg9IjkwMC44MDIiIHk9IjQ2My42MzEiIHdpZHRoPSIxNjIuMjEzIiBoZWlnaHQ9IjYyLjEyNDIiIGZpbGw9IiMwRTIxNDciLz4KPHJlY3QgeD0iNjkxLjY4MSIgeT0iOTIuNzM5MSIgd2lkdGg9IjI5Ny41MzgiIGhlaWdodD0iNjEuODI2MSIgZmlsbD0iIzBFMjE0NyIvPgo8cmVjdCB4PSI1OTguOTQiIHk9IjE4NS40NzgiIHdpZHRoPSIyOTcuNTM4IiBoZWlnaHQ9IjYxLjgyNjEiIGZpbGw9IiMwRTIxNDciLz4KPHJlY3QgeD0iMTAyMC40NSIgeT0iOTMuMTg2MyIgd2lkdGg9IjI3My44MDciIGhlaWdodD0iNjAuOTczOCIgZmlsbD0iIzBFMjE0NyIvPgo8cmVjdCB4PSI5OTYuOTQ2IiB5PSIxODUuNDc4IiB3aWR0aD0iMjk3LjUzOCIgaGVpZ2h0PSI2MS44MjYxIiBmaWxsPSIjMEUyMTQ3Ii8+CjxyZWN0IHg9IjEwOTMuNzkiIHk9IjQ2My4xNDQiIHdpZHRoPSIzOC42NDEzIiBoZWlnaHQ9IjYxLjgyNjEiIGZpbGw9IiMwRTIxNDciLz4KPHJlY3QgeD0iNTI5LjM4NiIgeT0iMTg1LjQ3OCIgd2lkdGg9IjM4LjY0MTMiIGhlaWdodD0iNjEuODI2MSIgZmlsbD0iIzBFMjE0NyIvPgo8cmVjdCB4PSI5MjcuMzkxIiB5PSIxODUuNDc4IiB3aWR0aD0iMzguNjQxMyIgaGVpZ2h0PSI2MS44MjYxIiBmaWxsPSIjMEUyMTQ3Ii8+CjxyZWN0IHg9IjEzMjUuNCIgeT0iMTg1LjQ3OCIgd2lkdGg9IjM4LjY0MTMiIGhlaWdodD0iNjEuODI2MSIgZmlsbD0iIzBFMjE0NyIvPgo8cmVjdCB4PSIzNjMuMjI4IiB5PSI1NTYuNDM1IiB3aWR0aD0iMzguNjQxMyIgaGVpZ2h0PSI2MS44MjYxIiBmaWxsPSIjMEUyMTQ3Ii8+CjxyZWN0IHk9IjY0OS4xNzQiIHdpZHRoPSIzOC42NDEzIiBoZWlnaHQ9IjYxLjgyNjEiIGZpbGw9IiMwRTIxNDciLz4KPHJlY3Qgd2lkdGg9IjE0MyIgaGVpZ2h0PSI2MiIgZmlsbD0iIzBFMjE0NyIvPgo8L2c+Cjwvc3ZnPgo="
+        />
+        <style data-emotion="css 177winr">
+          .css-177winr {
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 150px;
+            padding-bottom: 150px;
+          }
+        </style>
+        <div class="postStyle MuiBox-root css-177winr">
+          <style data-emotion="css 14taxry">
+            .css-14taxry {
+              max-width: 750px;
+              margin-left: auto;
+              margin-right: auto;
+              margin-top: 40px;
+              margin-bottom: 60px;
+              text-align: center;
+            }
+          </style>
+          <div class="MuiBox-root css-14taxry">
+            <h1 class="MuiTypography-root MuiTypography-h1 css-1w1hgbm">
+              Not Financial Advice
+            </h1>
+          </div>
+          <style data-emotion="css stdv31">
+            .css-stdv31 {
+              background-color: #091a3d;
+              border: 1px solid #4b608d;
+            }
+            @media (min-width: 0px) {
+              .css-stdv31 {
+                padding-left: 30px;
+                padding-right: 30px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+              }
+            }
+            @media (min-width: 992px) {
+              .css-stdv31 {
+                padding-left: 50px;
+                padding-right: 50px;
+                padding-top: 60px;
+                padding-bottom: 60px;
+              }
+            }
+          </style>
+          <div class="MuiBox-root css-stdv31">
+            <section>
+              <p>
+                The information on this website and any related posts, podcasts,
+                videos, or recordings is provided for informational,
+                educational, and entertainment purposes only. This information
+                is not intended to be and does not constitute financial advice,
+                investment advice, trading advice, or any other type of advice.
+                You should not make any decision – financial, investment,
+                trading or otherwise – based on any of the information presented
+                here without undertaking your own due diligence and consulting
+                with a financial adviser. Trading, including that of digital
+                assets or cryptocurrency, has potential rewards as well as
+                potential risks involved. Trading may not be suitable for all
+                individuals.
+              </p>
+            </section>
+          </div>
+        </div>
+        <div
+          data-gatsby-image-wrapper
+          style="
+            position: absolute;
+            right: 0;
+            bottom: 80px;
+            z-index: -1;
+            pointer-events: none;
+          "
+          class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
+        >
+          <div style="max-width: 1338px; display: block">
+            <img
+              alt
+              role="presentation"
+              aria-hidden="true"
+              src="data:image/svg+xml;charset=utf-8,%3Csvg height=&#x27;619&#x27; width=&#x27;1338&#x27; xmlns=&#x27;http://www.w3.org/2000/svg&#x27; version=&#x27;1.1&#x27;%3E%3C/svg%3E"
+              style="max-width: 100%; display: block; position: static"
+            />
+          </div>
+          <img
+            aria-hidden="true"
+            data-placeholder-image
+            style="opacity: 1; transition: opacity 500ms linear"
+            decoding="async"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAD0lEQVQoz2NgGAWjYBgCAALZAAHP5sSUAAAAAElFTkSuQmCC"
+            alt
+          /><picture
+            ><source
+              type="image/webp"
+              data-srcset="/static/eb6d2994562972bdf43ee890baeb02ae/2f43d/lines.webp 335w,/static/eb6d2994562972bdf43ee890baeb02ae/79cff/lines.webp 669w,/static/eb6d2994562972bdf43ee890baeb02ae/5698b/lines.webp 1338w"
+              sizes="(min-width: 1338px) 1338px, 100vw" />
+            <img
+              data-gatsby-image-ssr
+              data-main-image
+              style="opacity: 0"
+              sizes="(min-width: 1338px) 1338px, 100vw"
+              decoding="async"
+              loading="lazy"
+              data-src="/static/eb6d2994562972bdf43ee890baeb02ae/80e7e/lines.svg"
+              data-srcset="/static/eb6d2994562972bdf43ee890baeb02ae/2160e/lines.svg 335w,/static/eb6d2994562972bdf43ee890baeb02ae/e8122/lines.svg 669w,/static/eb6d2994562972bdf43ee890baeb02ae/80e7e/lines.svg 1338w"
+              alt /></picture
+          ><noscript
+            ><picture
+              ><source
+                type="image/webp"
+                srcset="
+                  /static/eb6d2994562972bdf43ee890baeb02ae/2f43d/lines.webp  335w,
+                  /static/eb6d2994562972bdf43ee890baeb02ae/79cff/lines.webp  669w,
+                  /static/eb6d2994562972bdf43ee890baeb02ae/5698b/lines.webp 1338w
+                "
+                sizes="(min-width: 1338px) 1338px, 100vw" />
+              <img
+                data-gatsby-image-ssr=""
+                data-main-image=""
+                style="opacity: 0"
+                sizes="(min-width: 1338px) 1338px, 100vw"
+                decoding="async"
+                loading="lazy"
+                src="/static/eb6d2994562972bdf43ee890baeb02ae/80e7e/lines.svg"
+                srcset="
+                  /static/eb6d2994562972bdf43ee890baeb02ae/2160e/lines.svg  335w,
+                  /static/eb6d2994562972bdf43ee890baeb02ae/e8122/lines.svg  669w,
+                  /static/eb6d2994562972bdf43ee890baeb02ae/80e7e/lines.svg 1338w
+                "
+                alt="" /></picture
+          ></noscript>
+          <script type="33ee137c4571820085f68913-module">
+            const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
+          </script>
+        </div>
+        <style data-emotion="css vueph9">
+          @media (min-width: 0px) {
+            .css-vueph9 {
+              padding-left: 0px;
+              padding-right: 0px;
+              padding-bottom: 20px;
+            }
+          }
+          @media (min-width: 992px) {
+            .css-vueph9 {
+              padding-left: 25px;
+              padding-right: 25px;
+              padding-bottom: 30px;
+            }
+          }
+          @media (min-width: 1400px) {
+            .css-vueph9 {
+              padding-left: 50px;
+              padding-right: 50px;
+              padding-bottom: 50px;
+            }
+          }
+        </style>
+         <footer class="MuiBox-root css-vueph9">
+          <style data-emotion="css aapsoz">
+            .css-aapsoz {
+              border: 1px solid #4b608d;
+              background-color: #091a3d;
+            }
+          </style>
+          <div class="MuiBox-root css-aapsoz">
+            <style data-emotion="css leu4cf">
+              .css-leu4cf {
+                -webkit-box-pack: justify;
+                -webkit-justify-content: space-between;
+                justify-content: space-between;
+              }
+              @media (min-width: 0px) {
+                .css-leu4cf {
+                  padding: 27px 27px 50px;
+                }
+              }
+              @media (min-width: 992px) {
+                .css-leu4cf {
+                  padding: 82px 70px;
+                }
+              }
+              @media (min-width: 1200px) {
+                .css-leu4cf {
+                  display: -webkit-box;
+                  display: -webkit-flex;
+                  display: -ms-flexbox;
+                  display: flex;
+                }
+              }
+              @media (min-width: 1400px) {
+                .css-leu4cf {
+                  padding: 82px 80px;
+                }
+              }
+            </style>
+            <div class="MuiBox-root css-leu4cf">
+              <style data-emotion="css mr12uc">
+                .css-mr12uc {
+                  padding-top: 14px;
+                  width: 100%;
+                  -webkit-flex: 0 0 auto;
+                  -ms-flex: 0 0 auto;
+                  flex: 0 0 auto;
+                }
+                @media (min-width: 0px) {
+                  .css-mr12uc {
+                    max-width: 100%;
+                    margin-bottom: 30px;
+                  }
+                }
+                @media (min-width: 768px) {
+                  .css-mr12uc {
+                    max-width: 489px;
+                  }
+                }
+                @media (min-width: 1200px) {
+                  .css-mr12uc {
+                    margin-bottom: 0px;
+                  }
+                }
+                .css-mr12uc .MuiOutlinedInput-notchedOutline {
+                  height: 40px;
+                }
+                .css-mr12uc .MuiFormControl-root {
+                  height: 40px;
+                }
+                .css-mr12uc .MuiTextField-root {
+                  width: 100%;
+                  background: #0c1f47;
+                  border: 1px solid #4b608d;
+                  color: #fff;
+                }
+                @media (min-width: 0px) {
+                  .css-mr12uc .MuiTextField-root {
+                    max-width: 100%;
+                    margin-right: 0px;
+                    margin-bottom: 10px;
+                  }
+                }
+                @media (min-width: 768px) {
+                  .css-mr12uc .MuiTextField-root {
+                    max-width: 295px;
+                    margin-right: 16px;
+                    margin-bottom: 0px;
+                  }
+                }
+                .css-mr12uc .MuiInputBase-input {
+                  color: #fff;
+                }
+                .css-mr12uc .MuiButton-root {
+                  background-color: #1ce7c2;
+                  color: #091a3d;
+                }
+                @media (min-width: 768px) {
+                  .css-mr12uc .MuiButton-root {
+                    min-width: 178px;
+                  }
+                }
+                .css-mr12uc .MuiButton-root:hover {
+                  background-color: #fff;
+                  color: #091a3d;
+                }
+                @media (min-width: 0px) {
+                  .css-mr12uc .form-container {
+                    -webkit-flex-direction: column;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                  }
+                }
+                @media (min-width: 768px) {
+                  .css-mr12uc .form-container {
+                    -webkit-flex-direction: row;
+                    -ms-flex-direction: row;
+                    flex-direction: row;
+                  }
+                }
+                .css-mr12uc h5 {
+                  font-size: 21px;
+                }
+              </style>
+              <div class="MuiBox-root css-mr12uc"></div>
+              <style data-emotion="css 408cc1">
+                @media (min-width: 768px) {
+                  .css-408cc1 {
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                  }
+                }
+                @media (min-width: 1200px) {
+                  .css-408cc1 {
+                    -webkit-box-pack: end;
+                    -ms-flex-pack: end;
+                    -webkit-justify-content: flex-end;
+                    justify-content: flex-end;
+                  }
+                }
+              </style>
+              <div class="MuiBox-root css-408cc1">
+                <style data-emotion="css 17bzk2b">
+                  @media (min-width: 0px) {
+                    .css-17bzk2b {
+                      padding-right: 0px;
+                    }
+                  }
+                  @media (min-width: 768px) {
+                    .css-17bzk2b {
+                      padding-right: 100px;
+                    }
+                  }
+                  @media (min-width: 1200px) {
+                    .css-17bzk2b {
+                      padding-left: 50px;
+                      padding-right: 0px;
+                    }
+                  }
+                  @media (min-width: 1400px) {
+                    .css-17bzk2b {
+                      padding-left: 100px;
+                    }
+                  }
+                  .css-17bzk2b a:hover {
+                    -webkit-text-decoration: underline;
+                    text-decoration: underline;
+                  }
+                </style>
+                <div class="MuiBox-root css-17bzk2b">
+                  <style data-emotion="css 12n4nr6">
+                    .css-12n4nr6 {
+                      margin: 0;
+                      font-weight: 600;
+                      font-family: Poppins, Helvetica, Arial;
+                      font-size: 1.03125rem;
+                      line-height: 1.1;
+                      letter-spacing: -0.01em;
+                      color: #1ce7c2;
+                      margin-bottom: 8px;
+                    }
+                    @media (min-width: 768px) {
+                      .css-12n4nr6 {
+                        font-size: 1.1364rem;
+                      }
+                    }
+                    @media (min-width: 992px) {
+                      .css-12n4nr6 {
+                        font-size: 1.1364rem;
+                      }
+                    }
+                    @media (min-width: 1280px) {
+                      .css-12n4nr6 {
+                        font-size: 1.1364rem;
+                      }
+                    }
+                  </style>
+                  <h6 class="MuiTypography-root MuiTypography-h6 css-12n4nr6">
+                    Building_
+                  </h6>
+                  <style data-emotion="css 185verm">
+                    .css-185verm {
+                      list-style: none;
+                      margin: 0;
+                      padding: 0;
+                      position: relative;
+                      padding-top: 8px;
+                      padding-bottom: 8px;
+                    }
+                    .css-185verm a {
+                      font-family: Poppins, Helvetica, Arial;
+                      line-height: 2;
+                    }
+                  </style>
+                  <ul class="MuiList-root MuiList-padding css-185verm">
+                    <li class="MuiListItem-root MuiListItem-gutters css-363czb">
+                      <a
+                        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-qndgqm"
+                        href="liquidity-providers"
+                        >Liquidity Providers</a
+                      >
+                    </li>
+                    <li class="MuiListItem-root MuiListItem-gutters css-363czb">
+                      <a
+                        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-qndgqm"
+                        href="validator-insurance"
+                        >Validator Insurance</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <style data-emotion="css csv9a4">
+                  @media (min-width: 0px) {
+                    .css-csv9a4 {
+                      padding-right: 0px;
+                      margin-top: 40px;
+                    }
+                  }
+                  @media (min-width: 768px) {
+                    .css-csv9a4 {
+                      padding-right: 100px;
+                      margin-top: 0px;
+                    }
+                  }
+                  @media (min-width: 1200px) {
+                    .css-csv9a4 {
+                      padding-left: 50px;
+                      padding-right: 0px;
+                    }
+                  }
+                  @media (min-width: 1400px) {
+                    .css-csv9a4 {
+                      padding-left: 100px;
+                    }
+                  }
+                  .css-csv9a4 a:hover {
+                    -webkit-text-decoration: underline;
+                    text-decoration: underline;
+                  }
+                </style>
+                <div class="MuiBox-root css-csv9a4">
+                  <h6 class="MuiTypography-root MuiTypography-h6 css-12n4nr6">
+                    Thinking_
+                  </h6>
+                  <ul class="MuiList-root MuiList-padding css-185verm">
+                    <li class="MuiListItem-root MuiListItem-gutters css-363czb">
+                      <a
+                        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-qndgqm"
+                        href="research"
+                        >Research</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="MuiBox-root css-csv9a4">
+                  <h6 class="MuiTypography-root MuiTypography-h6 css-12n4nr6">
+                    About_
+                  </h6>
+                  <ul class="MuiList-root MuiList-padding css-185verm">
+                    <li class="MuiListItem-root MuiListItem-gutters css-363czb">
+                      <a
+                        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-qndgqm"
+                        href="connect"
+                        >Connect</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <style data-emotion="css 1ydrii2">
+              .css-1ydrii2 {
+                -webkit-box-pack: justify;
+                -webkit-justify-content: space-between;
+                justify-content: space-between;
+                -webkit-align-items: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                border-top: 1px solid #4b608d;
+              }
+              @media (min-width: 0px) {
+                .css-1ydrii2 {
+                  padding-top: 20px;
+                  padding-bottom: 10px;
+                  padding-left: 27px;
+                  padding-right: 27px;
+                }
+              }
+              @media (min-width: 768px) {
+                .css-1ydrii2 {
+                  display: -webkit-box;
+                  display: -webkit-flex;
+                  display: -ms-flexbox;
+                  display: flex;
+                  padding-top: 0px;
+                  padding-bottom: 0px;
+                  padding-left: 0px;
+                  padding-right: 0px;
+                }
+              }
+            </style>
+            <div class="MuiBox-root css-1ydrii2">
+              <style data-emotion="css 1mopsyp">
+                .css-1mopsyp {
+                  background-color: #091a3d;
+                  min-width: 220px;
+                }
+                @media (min-width: 768px) {
+                  .css-1mopsyp {
+                    -webkit-transform: translateY(-31px);
+                    -moz-transform: translateY(-31px);
+                    -ms-transform: translateY(-31px);
+                    transform: translateY(-31px);
+                  }
+                }
+              </style>
+              <div class="MuiBox-root css-1mopsyp">
+                <div class="ft-logo">
+                  <span></span>
+                  <img src="assets/img/logo.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="MuiBox-root css-5g77he">
+            <div class="MuiBox-root css-nr9hu4">
+              <a
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ch5ulv"
+                href="terms-of-use"
+                >Terms of Use_</a
+              ><a
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ch5ulv"
+                href="data-protection-and-privacy-policy"
+                >Privacy Policy_</a
+              ><a
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ch5ulv"
+                href="nfa"
+                >Disclaimers_</a
+              >
+            </div>
+            <p class="MuiTypography-root MuiTypography-body1 css-1jj1qfv">
+              ©
+              <!-- -->2024<!-- -->
+              Stablecoin Labs Inc. Reg number: 5622843. All Rights Reserved.<!-- -->
+            </p>
+          </div>
+          <div class="MuiBox-root css-wllrbn">
+            <p class="MuiTypography-root MuiTypography-body1 css-11je6dg">
+              Stablecoin Labs does not hold any funds from external investors. All operations conducted by any individual, company, or application under Stablecoin Labs' contract remain under the full control and custody of the validator at all times.
+            </p>
+          </div>
+        </footer>
+      </main>
+    </div>
+
+    <!-- All Js Here -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/typed.umd.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <title>Stablecoin Labs - Crypto to Cash Liquidity Providers</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS  -->
+    <link rel="stylesheet" href="./assets/css/slick.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <!-- offcanvas menu start -->
+    <div id="offcanvas" class="MuiBox-root css-uvv6zi">
+      <button id="close-offcanvas">
+        <svg
+          width="20"
+          height="20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M18.2 18.2 2 2M2 18.2 18.2 2"
+            stroke="#fff"
+            stroke-width="3"
+            stroke-miterlimit="10"
+          ></path>
+        </svg>
+      </button>
+      <ul class="MuiList-root MuiList-padding css-1kzixr0">
+        <li class="MuiListItem-root MuiListItem-gutters css-1djrxkt">
+          <a
+            aria-current="page"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-10ukuoc"
+            href="liquidity-providers"
+            >Liquidity Providers</a>
+        </li>
+        <li class="MuiListItem-root MuiListItem-gutters css-1djrxkt">
+          <a
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-10ukuoc"
+            href="validator-insurance"
+            >Validator Insurance</a>
+        </li>
+        <li class="MuiListItem-root MuiListItem-gutters css-1djrxkt">
+          <a
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-10ukuoc"
+            href="research"
+            >Research</a>
+        </li>
+        <li class="MuiListItem-root MuiListItem-gutters css-1djrxkt">
+          <a
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-10ukuoc"
+            href="connect"
+            >Connect</a>
+        </li>
+      </ul>
+        <div class="MuiBox-root css-9xf4ju">
+        <a
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1rt86za"
+          href="terms-of-use"
+          >Terms of Use_</a
+        ><a
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1rt86za"
+          href="data-protection-and-privacy-policy"
+          >Privacy Policy_</a
+        ><a
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1rt86za"
+          href="nfa"
+          >Disclaimers_</a
+        >
+      </div>
+    </div>
+    <!-- offcanvas menu end -->
+    <div class="extra-header" id="extra-header">
+      <a href="/" class="logo"><img src="./assets/img/logo.svg" alt="" /></a>
+      <button id="offcanvas-trigger" class="navButton">
+        <svg
+          width="20"
+          height="12"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path fill="#fff" d="M0 0h20v2H0zM0 5h20v2H0zM0 10h20v2H0z"></path>
+        </svg>
+      </button>
+    </div>
+    <div id="gatsby-focus-wrapper">
+      <main class="MuiBox-root css-1xxpgu6">
+        <header
+          class="main-header MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionAbsolute css-zbea8d"
+        >
+          <a href="/" class="logo"
+            ><img src="./assets/img/logo.svg" alt=""
+          /></a>
+          <div class="MuiBox-root css-0">
+             <ul class="MuiBox-root css-p4lf9x">
+              <li class="MuiBox-root css-186deyi">
+                <span class="MuiBox-root css-13dr6ve"
+                  ><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-hwcyq6" href="liquidity-providers">Liquidity Providers</a>
+                </span>
+              </li>
+              <li class="MuiBox-root css-186deyi">
+                <span class="MuiBox-root css-13dr6ve"
+                  ><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-hwcyq6" href="validator-insurance">Validity Insurance</a>
+                </span>
+              </li>
+              <li class="MuiBox-root css-0">
+                <a
+                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-hwcyq6"
+                  href="research"
+                  >Research</a>
+              </li>
+              <li class="MuiBox-root css-0">
+                <a
+                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-hwcyq6"
+                  href="connect"
+                  >Connect</a>
+              </li>
+            </ul>
+          </div>
+        </header>
+
+        <span class="MuiBox-root css-14vpzhg"></span>
+        <div class="MuiBox-root css-79elbk">
+          <div class="bricks gatsby-image-wrapper">
+            <img src="assets/img/bricks.png" alt="" />
+          </div>
+          <div class="MuiBox-root css-16n0cbb cmn-block">
+            <div class="sec-title mt-adjust">
+              <h2>
+                <span class="theme-color">Crypto to Cash</span> Liquidity Provider
+              </h2>
+              <p><span style="color:white;">Get rewarded for providing crypto liquidity</span></p>
+            </div>
+            <div class="exchange-wrapper">
+              <div id="calc-outer-box" class="exchange-wrapper-box">
+                <form class="calculator-box" id="calculator-box">
+                  <div class="exchange-outer">
+                    <div class="exchange-box" id="coin-select">
+                      <div class="lf">
+                        <p class="label">You provide</p>
+                        <div class="select-result">
+                          <div id="csm-display" class="csm-display"></div>
+                          <span class="dropdown-arw"
+                            ><svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M12.138 5.86189C11.8776 5.60154 11.4555 5.60154 11.1952 5.86189L7.99992 9.05715L4.80466 5.86189C4.54431 5.60154 4.1222 5.60154 3.86185 5.86189C3.6015 6.12224 3.6015 6.54435 3.86185 6.8047L7.52851 10.4714C7.65354 10.5964 7.82311 10.6666 7.99992 10.6666C8.17673 10.6666 8.3463 10.5964 8.47132 10.4714L12.138 6.8047C12.3983 6.54435 12.3983 6.12224 12.138 5.86189Z"
+                                fill="currentColor"
+                                stroke="currentColor"
+                                stroke-linejoin="round"
+                              ></path>
+                            </svg>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="amount">
+                        <input
+                          id="crypto-input"
+                          type="text"
+                          placeholder="You Provide"
+                        />
+                        <span id="crypto-input-warning" class="warning"></span>
+                      </div>
+
+                      <ul id="csm-dropdown" class="csm-dropdown">
+                        <li data-val="XSGD">
+                          <span class="icon"
+                            ><img src="assets/img/xsgd.png" alt=""
+                          /></span>
+                          <strong>XSGD <span class="sub">XSGD</span></strong>
+                        </li>
+                        <li data-val="USDT">
+                          <span class="icon"
+                            ><img src="assets/img/usdt.svg" alt=""
+                          /></span>
+                          <strong>USDT <span class="sub">USDT</span></strong>
+                        </li>
+                      </ul>
+                    </div>
+                    <button type="button" class="swipe-box ui-2k6AYj6E">
+                      <svg
+                        width="6"
+                        height="12"
+                        viewBox="0 0 6 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="ui-tq2LOTUl"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M3.00001 0.25C3.19177 0.250002 3.36673 0.321975 3.49934 0.440381C3.51806 0.457091 3.53602 0.474806 3.55313 0.493489C3.55501 0.495537 3.55687 0.497597 3.55873 0.499666L5.55748 2.72048C5.83457 3.02837 5.80961 3.50258 5.50173 3.77968C5.19385 4.05677 4.71963 4.03182 4.44254 3.72394L3.75 2.95445V11C3.75 11.4142 3.41421 11.75 3 11.75C2.58579 11.75 2.25 11.4142 2.25 11V2.95447L1.55748 3.72394C1.28038 4.03182 0.806163 4.05677 0.498281 3.77968C0.1904 3.50258 0.165442 3.02837 0.442537 2.72048L2.4396 0.501533C2.57698 0.347206 2.77714 0.25 3 0.25C3 0.25 3 0.25 3.00001 0.25Z"
+                          fill="#fff"
+                        ></path>
+                      </svg>
+                      <svg
+                        width="6"
+                        height="12"
+                        viewBox="0 0 6 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="ui-tfa01HYX"
+                        style="transform: rotateZ(180deg); margin-left: 2px"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M3.00001 0.25C3.19177 0.250002 3.36673 0.321975 3.49934 0.440381C3.51806 0.457091 3.53602 0.474806 3.55313 0.493489C3.55501 0.495537 3.55687 0.497597 3.55873 0.499666L5.55748 2.72048C5.83457 3.02837 5.80961 3.50258 5.50173 3.77968C5.19385 4.05677 4.71963 4.03182 4.44254 3.72394L3.75 2.95445V11C3.75 11.4142 3.41421 11.75 3 11.75C2.58579 11.75 2.25 11.4142 2.25 11V2.95447L1.55748 3.72394C1.28038 4.03182 0.806163 4.05677 0.498281 3.77968C0.1904 3.50258 0.165442 3.02837 0.442537 2.72048L2.4396 0.501533C2.57698 0.347206 2.77714 0.25 3 0.25C3 0.25 3 0.25 3.00001 0.25Z"
+                          fill="#fff"
+                        ></path>
+                      </svg>
+                    </button>
+                    <div class="exchange-box">
+                      <div class="lf">
+                        <p class="label">You Get</p>
+                        <div class="select-result">
+                          <div id="csm-display2" class="csm-display"></div>
+                          <span class="dropdown-arw"
+                            ><svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M12.138 5.86189C11.8776 5.60154 11.4555 5.60154 11.1952 5.86189L7.99992 9.05715L4.80466 5.86189C4.54431 5.60154 4.1222 5.60154 3.86185 5.86189C3.6015 6.12224 3.6015 6.54435 3.86185 6.8047L7.52851 10.4714C7.65354 10.5964 7.82311 10.6666 7.99992 10.6666C8.17673 10.6666 8.3463 10.5964 8.47132 10.4714L12.138 6.8047C12.3983 6.54435 12.3983 6.12224 12.138 5.86189Z"
+                                fill="currentColor"
+                                stroke="currentColor"
+                                stroke-linejoin="round"
+                              ></path>
+                            </svg>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="amount">
+                        <input
+                          id="currency-input"
+                          type="text"
+                          placeholder="You Get"
+                        />
+                      </div>
+                      <ul id="csm-dropdown2" class="csm-dropdown">
+                        <li data-val="SGD">
+                          <span class="icon"
+                            ><img src="assets/img/flag-of-singapore.png" alt=""
+                          /></span>
+                          <strong>SGD <span class="sub">Cash Banknotes</span></strong>
+                        </li>
+                        <li data-val="USD">
+                          <span class="icon"
+                            ><img src="assets/img/flag-of-usa.png" alt=""
+                          /></span>
+                          <strong>USD <span class="sub">Cash Banknotes</span></strong>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <p class="earn">
+                    <span style="color:#1ce7c2" id="reward">NO DEPOSIT REQUIRED</span><br>No informal trade is allowed. You will have a receipt for all exchange</span>
+                  </p>
+                  <button type="submit" class="box-btn fill" id="exchange">
+                    Start today
+                  </button>
+                </form>
+                <div id="confirm-box" class="confirm-box">
+                  <div class="confirm-inner">
+                    <p>
+                      Contact our onboarding team via Telegram to start exchanging crypto into cash
+                    </p>
+                    <button id="backtoexchage" class="box-btn fill">
+                      <?xml version="1.0" ?><svg
+                        height="20"
+                        viewBox="0 0 1792 1792"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill="#fff"
+                          d="M1203 544q0 13-10 23l-393 393 393 393q10 10 10 23t-10 23l-50 50q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l50 50q10 10 10 23z"
+                        />
+                      </svg>
+                      Back to Rewards Calculator
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="way">
+                <h1>
+                  Provide Liquidity <br />
+                  <span class="typeable">Instant</span>
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+       <div class="MuiBox-root-outer">
+        <div class="MuiBox-root css-1hoitwk pit-outer">
+          <div class="pit-lf-content">
+            <div>
+              <h1 class="MuiTypography-root MuiTypography-h1 css-11uvei4">The place <span class="theme-color">to build.</span></h1>
+            <p>Designed to foster connections and inspire, the Pit brings together passionate developers, artists, founders, and everyone in between.</p>
+            <p><strong>Welcome to the Pit.</strong></p>
+            </div>
+          </div>
+          <div class="pit-lr-content">
+            <img class="cbimage" src="assets/img/cbimage.svg" alt="the Pit">
+            <div class="pit-slider">
+              <div class="item">
+                <img src="assets/img/1.jpg" alt="">
+              </div><div class="item">
+                <img src="assets/img/1.jpg" alt="">
+              </div><div class="item">
+                <img src="assets/img/1.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+        
+        <div class="MuiBox-root css-1hoitwk ">
+          <div class="provider-area mb-40">
+            <h3 class="secondary-title">How to become liquidity provider</h3>
+            <ul class="all-steps">
+              <li>
+                <p>
+                  <strong>Download Trustwallet</strong>You stay in control of your wallet at all time
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Deposit tokens in your wallet</strong>Deposit a minimum of 50000 tokens to be eligible
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Process rebalancing exchanges</strong>Maximum processed volume equals staked value
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Earn daily rewards</strong>Withdraw staked value and rewards any time
+                </p>
+              </li>
+            </ul>
+          </div>
+     
+          <div class="accordion">
+            <button class="course-accordion">
+              Why should I trust Stablecoin Labs?
+            </button>
+            <div class="course-panel">
+              <div class="panel-inner">
+                <p>
+                  Stablecoin Labs is a registered US company that has been operating on the market since 2019. We successfully serviced thousands of market makers and liquidity providers and continue to provide a safe way to earn passive income holding and exchanging stablecoins from their personal wallets. Our dedicated Support team stands guard 24/7 to
+                  help you with any exchange-related questions that might arise.
+                </p>
+              </div>
+            </div>
+
+            <button class="course-accordion">
+              How to earn with stablecoins?
+            </button>
+            <div class="course-panel">
+              <div class="panel-inner">
+                <p>
+                  Stake stablecoins in your wallet and proceed to rebalancing operations when required to earn daily rewards. Rebalancing operations consist in receiving onto your exchange account tokens from one chain and send tokens in return from your wallet on another chain. Maximum monthly value to exchange do not exceed staked value.
+                </p>
+              </div>
+            </div>
+
+            <button class="course-accordion">
+              How long does it take to receive my rewards?
+            </button>
+            <div class="course-panel">
+              <div class="panel-inner">
+                <p>
+                  As long as you keep your staked tokens in your wallet, you will continue to receive daily rewards. You can withdraw rewards or staked tokens any time without limitation.
+                </p>
+              </div>
+            </div>
+
+            <button class="course-accordion">
+              What happens if I want to withdraw my staked tokens from my wallet?
+            </button>
+            <div class="course-panel">
+              <div class="panel-inner">
+                <p>
+                  When you decide to withdraw tokens from your wallet. Daily rewards stop from being perceived.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       <footer class="MuiBox-root css-vueph9">
+          <style data-emotion="css aapsoz">
+            .css-aapsoz {
+              border: 1px solid #4b608d;
+              background-color: #091a3d;
+            }
+          </style>
+          <div class="MuiBox-root css-aapsoz">
+            <style data-emotion="css leu4cf">
+              .css-leu4cf {
+                -webkit-box-pack: justify;
+                -webkit-justify-content: space-between;
+                justify-content: space-between;
+              }
+              @media (min-width: 0px) {
+                .css-leu4cf {
+                  padding: 27px 27px 50px;
+                }
+              }
+              @media (min-width: 992px) {
+                .css-leu4cf {
+                  padding: 82px 70px;
+                }
+              }
+              @media (min-width: 1200px) {
+                .css-leu4cf {
+                  display: -webkit-box;
+                  display: -webkit-flex;
+                  display: -ms-flexbox;
+                  display: flex;
+                }
+              }
+              @media (min-width: 1400px) {
+                .css-leu4cf {
+                  padding: 82px 80px;
+                }
+              }
+            </style>
+            <div class="MuiBox-root css-leu4cf">
+              <style data-emotion="css mr12uc">
+                .css-mr12uc {
+                  padding-top: 14px;
+                  width: 100%;
+                  -webkit-flex: 0 0 auto;
+                  -ms-flex: 0 0 auto;
+                  flex: 0 0 auto;
+                }
+                @media (min-width: 0px) {
+                  .css-mr12uc {
+                    max-width: 100%;
+                    margin-bottom: 30px;
+                  }
+                }
+                @media (min-width: 768px) {
+                  .css-mr12uc {
+                    max-width: 489px;
+                  }
+                }
+                @media (min-width: 1200px) {
+                  .css-mr12uc {
+                    margin-bottom: 0px;
+                  }
+                }
+                .css-mr12uc .MuiOutlinedInput-notchedOutline {
+                  height: 40px;
+                }
+                .css-mr12uc .MuiFormControl-root {
+                  height: 40px;
+                }
+                .css-mr12uc .MuiTextField-root {
+                  width: 100%;
+                  background: #0c1f47;
+                  border: 1px solid #4b608d;
+                  color: #fff;
+                }
+                @media (min-width: 0px) {
+                  .css-mr12uc .MuiTextField-root {
+                    max-width: 100%;
+                    margin-right: 0px;
+                    margin-bottom: 10px;
+                  }
+                }
+                @media (min-width: 768px) {
+                  .css-mr12uc .MuiTextField-root {
+                    max-width: 295px;
+                    margin-right: 16px;
+                    margin-bottom: 0px;
+                  }
+                }
+                .css-mr12uc .MuiInputBase-input {
+                  color: #fff;
+                }
+                .css-mr12uc .MuiButton-root {
+                  background-color: #1ce7c2;
+                  color: #091a3d;
+                }
+                @media (min-width: 768px) {
+                  .css-mr12uc .MuiButton-root {
+                    min-width: 178px;
+                  }
+                }
+                .css-mr12uc .MuiButton-root:hover {
+                  background-color: #fff;
+                  color: #091a3d;
+                }
+                @media (min-width: 0px) {
+                  .css-mr12uc .form-container {
+                    -webkit-flex-direction: column;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                  }
+                }
+                @media (min-width: 768px) {
+                  .css-mr12uc .form-container {
+                    -webkit-flex-direction: row;
+                    -ms-flex-direction: row;
+                    flex-direction: row;
+                  }
+                }
+                .css-mr12uc h5 {
+                  font-size: 21px;
+                }
+              </style>
+              <div class="MuiBox-root css-mr12uc"></div>
+              <style data-emotion="css 408cc1">
+                @media (min-width: 768px) {
+                  .css-408cc1 {
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                  }
+                }
+                @media (min-width: 1200px) {
+                  .css-408cc1 {
+                    -webkit-box-pack: end;
+                    -ms-flex-pack: end;
+                    -webkit-justify-content: flex-end;
+                    justify-content: flex-end;
+                  }
+                }
+              </style>
+              <div class="MuiBox-root css-408cc1">
+                <style data-emotion="css 17bzk2b">
+                  @media (min-width: 0px) {
+                    .css-17bzk2b {
+                      padding-right: 0px;
+                    }
+                  }
+                  @media (min-width: 768px) {
+                    .css-17bzk2b {
+                      padding-right: 100px;
+                    }
+                  }
+                  @media (min-width: 1200px) {
+                    .css-17bzk2b {
+                      padding-left: 50px;
+                      padding-right: 0px;
+                    }
+                  }
+                  @media (min-width: 1400px) {
+                    .css-17bzk2b {
+                      padding-left: 100px;
+                    }
+                  }
+                  .css-17bzk2b a:hover {
+                    -webkit-text-decoration: underline;
+                    text-decoration: underline;
+                  }
+                </style>
+                <div class="MuiBox-root css-17bzk2b">
+                  <style data-emotion="css 12n4nr6">
+                    .css-12n4nr6 {
+                      margin: 0;
+                      font-weight: 600;
+                      font-family: Poppins, Helvetica, Arial;
+                      font-size: 1.03125rem;
+                      line-height: 1.1;
+                      letter-spacing: -0.01em;
+                      color: #1ce7c2;
+                      margin-bottom: 8px;
+                    }
+                    @media (min-width: 768px) {
+                      .css-12n4nr6 {
+                        font-size: 1.1364rem;
+                      }
+                    }
+                    @media (min-width: 992px) {
+                      .css-12n4nr6 {
+                        font-size: 1.1364rem;
+                      }
+                    }
+                    @media (min-width: 1280px) {
+                      .css-12n4nr6 {
+                        font-size: 1.1364rem;
+                      }
+                    }
+                  </style>
+                  <h6 class="MuiTypography-root MuiTypography-h6 css-12n4nr6">
+                    Building_
+                  </h6>
+                  <style data-emotion="css 185verm">
+                    .css-185verm {
+                      list-style: none;
+                      margin: 0;
+                      padding: 0;
+                      position: relative;
+                      padding-top: 8px;
+                      padding-bottom: 8px;
+                    }
+                    .css-185verm a {
+                      font-family: Poppins, Helvetica, Arial;
+                      line-height: 2;
+                    }
+                  </style>
+                  <ul class="MuiList-root MuiList-padding css-185verm">
+                    <li class="MuiListItem-root MuiListItem-gutters css-363czb">
+                      <a
+                        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-qndgqm"
+                        href="liquidity-providers"
+                        >Liquidity Providers</a
+                      >
+                    </li>
+                    <li class="MuiListItem-root MuiListItem-gutters css-363czb">
+                      <a
+                        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-qndgqm"
+                        href="validator-insurance"
+                        >Validator Insurance</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <style data-emotion="css csv9a4">
+                  @media (min-width: 0px) {
+                    .css-csv9a4 {
+                      padding-right: 0px;
+                      margin-top: 40px;
+                    }
+                  }
+                  @media (min-width: 768px) {
+                    .css-csv9a4 {
+                      padding-right: 100px;
+                      margin-top: 0px;
+                    }
+                  }
+                  @media (min-width: 1200px) {
+                    .css-csv9a4 {
+                      padding-left: 50px;
+                      padding-right: 0px;
+                    }
+                  }
+                  @media (min-width: 1400px) {
+                    .css-csv9a4 {
+                      padding-left: 100px;
+                    }
+                  }
+                  .css-csv9a4 a:hover {
+                    -webkit-text-decoration: underline;
+                    text-decoration: underline;
+                  }
+                </style>
+                <div class="MuiBox-root css-csv9a4">
+                  <h6 class="MuiTypography-root MuiTypography-h6 css-12n4nr6">
+                    Thinking_
+                  </h6>
+                  <ul class="MuiList-root MuiList-padding css-185verm">
+                    <li class="MuiListItem-root MuiListItem-gutters css-363czb">
+                      <a
+                        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-qndgqm"
+                        href="research"
+                        >Research</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="MuiBox-root css-csv9a4">
+                  <h6 class="MuiTypography-root MuiTypography-h6 css-12n4nr6">
+                    About_
+                  </h6>
+                  <ul class="MuiList-root MuiList-padding css-185verm">
+                    <li class="MuiListItem-root MuiListItem-gutters css-363czb">
+                      <a
+                        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-qndgqm"
+                        href="connect"
+                        >Connect</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <style data-emotion="css 1ydrii2">
+              .css-1ydrii2 {
+                -webkit-box-pack: justify;
+                -webkit-justify-content: space-between;
+                justify-content: space-between;
+                -webkit-align-items: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                border-top: 1px solid #4b608d;
+              }
+              @media (min-width: 0px) {
+                .css-1ydrii2 {
+                  padding-top: 20px;
+                  padding-bottom: 10px;
+                  padding-left: 27px;
+                  padding-right: 27px;
+                }
+              }
+              @media (min-width: 768px) {
+                .css-1ydrii2 {
+                  display: -webkit-box;
+                  display: -webkit-flex;
+                  display: -ms-flexbox;
+                  display: flex;
+                  padding-top: 0px;
+                  padding-bottom: 0px;
+                  padding-left: 0px;
+                  padding-right: 0px;
+                }
+              }
+            </style>
+            <div class="MuiBox-root css-1ydrii2">
+              <style data-emotion="css 1mopsyp">
+                .css-1mopsyp {
+                  background-color: #091a3d;
+                  min-width: 220px;
+                }
+                @media (min-width: 768px) {
+                  .css-1mopsyp {
+                    -webkit-transform: translateY(-31px);
+                    -moz-transform: translateY(-31px);
+                    -ms-transform: translateY(-31px);
+                    transform: translateY(-31px);
+                  }
+                }
+              </style>
+              <div class="MuiBox-root css-1mopsyp">
+                <div class="ft-logo">
+                  <span></span>
+                  <img src="assets/img/logo.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="MuiBox-root css-5g77he">
+            <div class="MuiBox-root css-nr9hu4">
+              <a
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ch5ulv"
+                href="terms-of-use"
+                >Terms of Use_</a
+              ><a
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ch5ulv"
+                href="data-protection-and-privacy-policy"
+                >Privacy Policy_</a
+              ><a
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ch5ulv"
+                href="nfa"
+                >Disclaimers_</a
+              >
+            </div>
+            <p class="MuiTypography-root MuiTypography-body1 css-1jj1qfv">
+              ©
+              <!-- -->2024<!-- -->
+              Stablecoin Labs Inc. Reg number: 5622843. All Rights Reserved.<!-- -->
+            </p>
+          </div>
+          <div class="MuiBox-root css-wllrbn">
+            <p class="MuiTypography-root MuiTypography-body1 css-11je6dg">
+              Stablecoin Labs does not hold any funds from external investors. All operations conducted by any individual, company, or application under Stablecoin Labs' contract remain under the full control and custody of the validator at all times.
+            </p>
+          </div>
+        </footer>
+      </main>
+    </div>
+
+    <!-- All Js Here -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/typed.umd.js"></script>
+    <script>
+      // Activation for typed js plugin
+      var typed = new Typed(".typeable", {
+        strings: ["Instantly", "Securely"],
+        typeSpeed: 100,
+        showCursor: false,
+        loop: true, // This options hides the cursor
+      });
+    </script>
+    <script src="assets/js/liquidity-cash-calculator.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

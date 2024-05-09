@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <title>Stablecoin Labs - Validator Insurance</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS  -->
+    <link rel="stylesheet" href="./assets/css/slick.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <!-- offcanvas menu start -->
+    <div id="offcanvas" class="MuiBox-root css-uvv6zi">
+      <button id="close-offcanvas">
+        <svg
+          width="20"
+          height="20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M18.2 18.2 2 2M2 18.2 18.2 2"
+            stroke="#fff"
+            stroke-width="3"
+            stroke-miterlimit="10"
+          ></path>
+        </svg>
+      </button>
+      <ul class="MuiList-root MuiList-padding css-1kzixr0">
+        <li class="MuiListItem-root MuiListItem-gutters css-1djrxkt">
+          <a
+            aria-current="page"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-10ukuoc"
+            href="liquidity-providers"
+            >Liquidity Providers</a>
+        </li>
+        <li class="MuiListItem-root MuiListItem-gutters css-1djrxkt">
+          <a
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-10ukuoc"
+            href="validator-insurance"
+            >Validator Insurance</a>
+        </li>
+        <li class="MuiListItem-root MuiListItem-gutters css-1djrxkt">
+          <a
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-10ukuoc"
+            href="research"
+            >Research</a>
+        </li>
+        <li class="MuiListItem-root MuiListItem-gutters css-1djrxkt">
+          <a
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-10ukuoc"
+            href="connect"
+            >Connect</a>
+        </li>
+      </ul>
+    
+      <div class="MuiBox-root css-9xf4ju">
+        <a
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1rt86za"
+          href="terms-of-use"
+          >Terms of Use_</a
+        ><a
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1rt86za"
+          href="data-protection-and-privacy-policy"
+          >Privacy Policy_</a
+        ><a
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1rt86za"
+          href="nfa"
+          >Disclaimers_</a
+        >
+      </div>
+    </div>
+    <!-- offcanvas menu end -->
+    <div class="extra-header" id="extra-header">
+      <a href="/" class="logo"><img src="./assets/img/logo.svg" alt="" /></a>
+      <button id="offcanvas-trigger" class="navButton">
+        <svg
+          width="20"
+          height="12"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path fill="#fff" d="M0 0h20v2H0zM0 5h20v2H0zM0 10h20v2H0z"></path>
+        </svg>
+      </button>
+    </div>
+
+    <div id="gatsby-focus-wrapper">
+      <main class="MuiBox-root css-1xxpgu6">
+        <header
+          class="main-header MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionAbsolute css-zbea8d"
+        >
+          <a href="/" class="logo"
+            ><img src="./assets/img/logo.svg" alt=""
+          /></a>
+          <div class="MuiBox-root css-0">
+            <ul class="MuiBox-root css-p4lf9x">
+              <li class="MuiBox-root css-186deyi">
+                <span class="MuiBox-root css-13dr6ve"
+                  ><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-hwcyq6" href="liquidity-providers">Liquidity Providers</a>
+                </span>
+              </li>
+              <li class="MuiBox-root css-186deyi">
+                <span class="MuiBox-root css-13dr6ve"
+                  ><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-hwcyq6" href="validator-insurance">Validity Insurance</a>
+                </span>
+              </li>
+              <li class="MuiBox-root css-0">
+                <a
+                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-hwcyq6"
+                  href="research"
+                  >Research</a>
+              </li>
+              <li class="MuiBox-root css-0">
+                <a
+                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-hwcyq6"
+                  href="connect"
+                  >Connect</a>
+              </li>
+            </ul>
+          </div>
+        </header>
+
+        
+        <span class="MuiBox-root css-nsv6hr"></span>
+        <style data-emotion="css 1rne420">
+          .css-1rne420 {
+            position: relative;
+          }
+          @media (min-width: 0px) {
+            .css-1rne420 {
+              padding-top: 120px;
+              padding-bottom: 80px;
+            }
+          }
+          @media (min-width: 992px) {
+            .css-1rne420 {
+              padding-top: 200px;
+              padding-bottom: 260px;
+            }
+          }
+        </style>
+        <div class="MuiBox-root css-1rne420">
+          <style data-emotion="css ampuqg">
+            .css-ampuqg {
+              width: 100%;
+              -webkit-transform: scale(1.05);
+              -moz-transform: scale(1.05);
+              -ms-transform: scale(1.05);
+              transform: scale(1.05);
+              z-index: -2;
+              opacity: 0.5;
+              position: absolute;
+              left: 0;
+              top: 30px;
+            }
+            @media (min-width: 0px) {
+              .css-ampuqg {
+                display: none;
+              }
+            }
+            @media (min-width: 1400px) {
+              .css-ampuqg {
+                display: block;
+              }
+            }</style
+          ><img
+            class="MuiBox-root css-ampuqg"
+            src="assets/img/top-trans-validator.svg"
+            alt
+          /><style data-emotion="css rec2ow">
+            .css-rec2ow {
+              width: 100%;
+              -webkit-transform: scale(1.05);
+              -moz-transform: scale(1.05);
+              -ms-transform: scale(1.05);
+              transform: scale(1.05);
+              z-index: -2;
+              opacity: 0.5;
+              position: absolute;
+              left: 0;
+              top: 30%;
+            }
+            @media (min-width: 0px) {
+              .css-rec2ow {
+                display: none;
+              }
+            }
+            @media (min-width: 1400px) {
+              .css-rec2ow {
+                display: block;
+              }
+            }</style
+          ><img
+            class="MuiBox-root css-rec2ow"
+            src="assets/img/bg-trans-validator.svg"
+            alt
+          /><style data-emotion="css 14g91lz">
+            .css-14g91lz {
+              max-width: 1082px;
+              margin-left: auto;
+              margin-right: auto;
+            }
+          </style>
+          <div class="MuiBox-root css-14g91lz">
+            <style data-emotion="css 1hu3hqg">
+              .css-1hu3hqg {
+                margin: 0;
+                font-weight: 600;
+                font-family: Poppins, Helvetica, Arial;
+                font-size: 2.541875rem;
+                line-height: 1.1;
+                letter-spacing: -0.01em;
+              }
+              @media (min-width: 768px) {
+                .css-1hu3hqg {
+                  font-size: 3.4091rem;
+                }
+              }
+              @media (min-width: 992px) {
+                .css-1hu3hqg {
+                  font-size: 3.6364rem;
+                }
+              }
+              @media (min-width: 1280px) {
+                .css-1hu3hqg {
+                  font-size: 4.0909rem;
+                }
+              }
+              @media (min-width: 0px) {
+                .css-1hu3hqg {
+                  margin-bottom: 50px;
+                }
+              }
+              @media (min-width: 768px) {
+                .css-1hu3hqg {
+                  margin-bottom: 100px;
+                }
+              }
+              @media (min-width: 992px) {
+                .css-1hu3hqg {
+                  margin-bottom: 200px;
+                }
+              }
+            </style>
+            <h1 class="MuiTypography-root MuiTypography-h1 css-1hu3hqg">
+              Validator<!-- -->
+              <!-- --><style data-emotion="css 133q1tv">
+                .css-133q1tv {
+                  color: #1ce7c2;
+                }</style
+              ><span class="MuiBox-root css-133q1tv">Insurance</span>
+            </h1>
+          </div>
+          <style data-emotion="css 79elbk">
+            .css-79elbk {
+              position: relative;
+            }
+          </style>
+          <div class="MuiBox-root css-79elbk">
+            <style data-emotion="css 1ais3bn">
+              .css-1ais3bn {
+                max-width: 1082px;
+                margin-left: auto;
+                margin-right: auto;
+                position: relative;
+              }
+            </style>
+            <div class="MuiBox-root css-1ais3bn">
+              <style data-emotion="css 4qqn9t">
+                .css-4qqn9t {
+                  -webkit-box-pack: justify;
+                  -webkit-justify-content: space-between;
+                  justify-content: space-between;
+                }
+                @media (min-width: 0px) {
+                  .css-4qqn9t {
+                    display: initial;
+                  }
+                }
+                @media (min-width: 768px) {
+                  .css-4qqn9t {
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                  }
+                }
+              </style>
+              <div class="MuiBox-root css-4qqn9t">
+                <style data-emotion="css 1k2bqex">
+                  .css-1k2bqex {
+                    margin: 0;
+                    font-weight: 300;
+                    font-family: Poppins, Helvetica, Arial;
+                    line-height: 1.6;
+                    font-size: 15px;
+                    margin-bottom: 50px;
+                  }
+                  @media (min-width: 0px) {
+                    .css-1k2bqex {
+                      max-width: initial;
+                    }
+                  }
+                  @media (min-width: 768px) {
+                    .css-1k2bqex {
+                      max-width: 450px;
+                    }
+                  }
+                </style>
+                <p class="MuiTypography-root MuiTypography-body1 css-1k2bqex">
+			At Stablecoin Labs, security is paramount. We actively engage in the blockchain consensus process, ensuring all participants are covered by our Validator Insurance, funded by our dedicated safety reserves.                  
+                </p>
+                <style data-emotion="css 14supos">
+                  .css-14supos {
+                    display: block;
+                    max-width: 100%;
+                  }
+                  @media (min-width: 0px) {
+                    .css-14supos {
+                      margin-left: auto;
+                      margin-right: auto;
+                    }
+                  }
+                  @media (min-width: 992px) {
+                    .css-14supos {
+                      margin-left: initial;
+                      margin-right: initial;
+                    }
+                  }</style
+                ><img
+                  class="MuiBox-root css-14supos"
+                  src="assets/img/chains.svg"
+                  alt
+                />
+              </div>
+            </div>
+          </div>
+          <div class="MuiBox-root css-79elbk">
+            <style data-emotion="css 7lqnhd">
+              .css-7lqnhd {
+                position: relative;
+              }
+              .css-7lqnhd:before {
+                content: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDI2IiBoZWlnaHQ9IjIxIiB2aWV3Qm94PSIwIDAgNDI2IDIxIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNNDI1LjUgMTFMMjEgMTEiIHN0cm9rZT0iIzRCNjA4RCIvPgo8Y2lyY2xlIGN4PSIxMC41IiBjeT0iMTAuNSIgcj0iMTAuNSIgZmlsbD0iIzBDMUY0NyIvPgo8Y2lyY2xlIGN4PSIxMC41IiBjeT0iMTAuNSIgcj0iNS41IiBmaWxsPSIjMEMxRjQ3IiBzdHJva2U9IiMzODRFN0MiIHN0cm9rZS13aWR0aD0iMiIvPgo8L3N2Zz4K);
+                position: absolute;
+                left: 40px;
+                top: 180px;
+                z-index: -1;
+              }
+              @media (min-width: 0px) {
+                .css-7lqnhd:before {
+                  display: none;
+                }
+              }
+              @media (min-width: 1400px) {
+                .css-7lqnhd:before {
+                  display: block;
+                }
+              }</style
+            ><span class="MuiBox-root css-7lqnhd"></span
+            ><style data-emotion="css 183i4js">
+              .css-183i4js {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: justify;
+                -webkit-justify-content: space-between;
+                justify-content: space-between;
+                -webkit-align-items: flex-end;
+                -webkit-box-align: flex-end;
+                -ms-flex-align: flex-end;
+                align-items: flex-end;
+                margin-top: 64px;
+                max-width: 1082px;
+                margin-left: auto;
+                margin-right: auto;
+              }
+            </style>
+            <div class="MuiBox-root css-183i4js">
+              <style data-emotion="css 1bc349s">
+                .css-1bc349s {
+                  background-color: #091a3d;
+                  border: 1px solid #4b608d;
+                  position: relative;
+                  width: 100%;
+                  margin-right: 30px;
+                }
+                @media (min-width: 0px) {
+                  .css-1bc349s {
+                    padding: 25px;
+                    max-width: 100%;
+                  }
+                }
+                @media (min-width: 768px) {
+                  .css-1bc349s {
+                    padding: 48px;
+                  }
+                }
+                @media (min-width: 992px) {
+                  .css-1bc349s {
+                    max-width: 630px;
+                  }
+                }
+                .css-1bc349s:before {
+                  content: "";
+                  background-color: #091a3d;
+                  border: 1px solid #4b608d;
+                  position: absolute;
+                  left: 10px;
+                  top: -10px;
+                  width: 100%;
+                  height: 100%;
+                  z-index: -1;
+                }
+              </style>
+              <div class="MuiBox-root css-1bc349s">
+                <style data-emotion="css 17xi1cp">
+                  .css-17xi1cp {
+                    margin: 0;
+                    font-weight: 600;
+                    font-family: Poppins, Helvetica, Arial;
+                    font-size: 1.3884349999999999rem;
+                    line-height: 1.19;
+                    letter-spacing: -0.01em;
+                  }
+                  @media (min-width: 768px) {
+                    .css-17xi1cp {
+                      font-size: 1.6807rem;
+                    }
+                  }
+                  @media (min-width: 992px) {
+                    .css-17xi1cp {
+                      font-size: 1.6807rem;
+                    }
+                  }
+                  @media (min-width: 1280px) {
+                    .css-17xi1cp {
+                      font-size: 1.6807rem;
+                    }
+                  }
+                </style>
+                <h4 class="MuiTypography-root MuiTypography-h4 css-17xi1cp">
+                  All validators are protected by<!-- -->
+                  <!-- --><style data-emotion="css 1x1660d">
+                    .css-1x1660d {
+                      color: #1ce7c2;
+                      display: block;
+                      line-height: 1.2;
+                      letter-spacing: -0.01em;
+                      margin-bottom: 24px;
+                    }</style
+                  ><span class="MuiBox-root css-1x1660d"
+                    >Validator Insurance<!-- -->
+                    <!-- --></span
+                  >
+                </h4>
+                <style data-emotion="css 17ymc59">
+                  .css-17ymc59 {
+                    margin: 0;
+                    font-weight: 300;
+                    font-family: Poppins, Helvetica, Arial;
+                    line-height: 1.6;
+                    font-size: 15px;
+                    margin-bottom: 35px;
+                  }
+                </style>
+                <p class="MuiTypography-root MuiTypography-body1 css-17ymc59">
+                  Here are a few ways our validators are protected:
+                </p>
+                <style data-emotion="css 1ontqvh">
+                  .css-1ontqvh {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    position: relative;
+                    padding-top: 8px;
+                    padding-bottom: 8px;
+                  }
+                </style>
+                <ul class="MuiList-root MuiList-padding css-1ontqvh">
+                  <style data-emotion="css aju9ia">
+                    .css-aju9ia {
+                      display: -webkit-box;
+                      display: -webkit-flex;
+                      display: -ms-flexbox;
+                      display: flex;
+                      -webkit-box-pack: start;
+                      -ms-flex-pack: start;
+                      -webkit-justify-content: flex-start;
+                      justify-content: flex-start;
+                      -webkit-align-items: center;
+                      -webkit-box-align: center;
+                      -ms-flex-align: center;
+                      align-items: center;
+                      position: relative;
+                      -webkit-text-decoration: none;
+                      text-decoration: none;
+                      width: 100%;
+                      box-sizing: border-box;
+                      text-align: left;
+                      padding-top: 8px;
+                      padding-bottom: 8px;
+                      padding-left: 16px;
+                      padding-right: 16px;
+                      padding-left: 0px;
+                      padding-right: 0px;
+                      -webkit-align-items: flex-start;
+                      -webkit-box-align: flex-start;
+                      -ms-flex-align: flex-start;
+                      align-items: flex-start;
+                    }
+                    .css-aju9ia.Mui-focusVisible {
+                      background-color: rgba(255, 255, 255, 0.12);
+                    }
+                    .css-aju9ia.Mui-selected {
+                      background-color: rgba(144, 202, 249, 0.16);
+                    }
+                    .css-aju9ia.Mui-selected.Mui-focusVisible {
+                      background-color: rgba(144, 202, 249, 0.28);
+                    }
+                    .css-aju9ia.Mui-disabled {
+                      opacity: 0.38;
+                    }
+                  </style>
+                  <li
+                    class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-aju9ia"
+                  >
+                    <style data-emotion="css 132kb2i">
+                      .css-132kb2i {
+                        background-color: #1ce7c2;
+                        color: #0d2352;
+                        font-size: 12px;
+                        line-height: 28px;
+                        width: 28px;
+                        height: 28px;
+                        -webkit-flex: 0 0 auto;
+                        -ms-flex: 0 0 auto;
+                        flex: 0 0 auto;
+                        text-align: center;
+                        margin-right: 18px;
+                      }</style
+                    ><span class="MuiBox-root css-132kb2i">/01</span>Our Validator insurance provides comprehensive coverage to all validators worldwide, ensuring their funds are fully protected.<!-- -->
+                  </li>
+                  <li
+                    class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-aju9ia"
+                  >
+                    <span class="MuiBox-root css-132kb2i">/02</span>All
+                    validators are supported 24/7 by a world-class operations
+                    team responsible for Stablecoin Labs core operations.<!-- -->
+                  </li>
+                  <li
+                    class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-aju9ia"
+                  >
+                    <span class="MuiBox-root css-132kb2i">/03</span>Validators engage in ongoing education and skill development initiatives to stay updated on the latest security protocols and best practices, to operate securely across global networks.<!-- -->
+                  </li>
+                </ul>
+              </div>
+              <style data-emotion="css 1wwew76">
+                @media (min-width: 0px) {
+                  .css-1wwew76 {
+                    display: none;
+                  }
+                }
+                @media (min-width: 992px) {
+                  .css-1wwew76 {
+                    display: block;
+                  }
+                }</style
+              ><img
+                class="MuiBox-root css-1wwew76"
+                src="assets/img/cube.svg"
+                alt
+              />
+            </div>
+          </div>
+          <style data-emotion="css sghyda">
+            .css-sghyda {
+              text-align: center;
+              max-width: 400px;
+              margin-left: auto;
+              margin-right: auto;
+            }
+            @media (min-width: 0px) {
+              .css-sghyda {
+                margin-top: 100px;
+              }
+            }
+            @media (min-width: 992px) {
+              .css-sghyda {
+                margin-top: 250px;
+              }
+            }
+          </style>
+          <div class="MuiBox-root css-sghyda">
+            <style data-emotion="css 1o2eg5z">
+              .css-1o2eg5z {
+                margin: 0;
+                font-weight: 600;
+                font-family: Poppins, Helvetica, Arial;
+                font-size: 2.0787500000000003rem;
+                line-height: 1.09;
+                letter-spacing: -0.01em;
+                margin-bottom: 30px;
+              }
+              @media (min-width: 768px) {
+                .css-1o2eg5z {
+                  font-size: 2.7523rem;
+                }
+              }
+              @media (min-width: 992px) {
+                .css-1o2eg5z {
+                  font-size: 2.9817rem;
+                }
+              }
+              @media (min-width: 1280px) {
+                .css-1o2eg5z {
+                  font-size: 3.211rem;
+                }
+              }
+            </style>
+            <h2 class="MuiTypography-root MuiTypography-h2 css-1o2eg5z">
+              If you have any<!-- -->
+              <!-- --><span class="MuiBox-root css-133q1tv">questions</span>
+            </h2>
+            <style data-emotion="css 1vbgp9z">
+              .css-1vbgp9z {
+                margin: 0;
+                font-weight: 300;
+                font-family: Poppins, Helvetica, Arial;
+                line-height: 1.6;
+                font-size: 15px;
+              }
+            </style>
+            <p class="MuiTypography-root MuiTypography-body1 css-1vbgp9z">
+              or a security issue, you can reach us below.
+            </p>
+            <style data-emotion="css jstu5q">
+              .css-jstu5q {
+                font-family: Poppins, Helvetica, Arial;
+                font-weight: 500;
+                font-size: 0.875rem;
+                line-height: 1.75;
+                text-transform: uppercase;
+                min-width: 64px;
+                padding: 5px 15px;
+                border-radius: 4px;
+                -webkit-transition: background-color 250ms
+                    cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+                  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+                  border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+                  color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+                    0ms,
+                  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+                  border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+                  color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                border: 1px solid rgba(144, 202, 249, 0.5);
+                color: #90caf9;
+                font-size: 12px;
+                line-height: 1;
+                font-weight: 600;
+                color: #fff;
+                text-transform: none;
+                border-radius: 0;
+                padding: 13px 20px;
+                border: 1px solid rgba(255, 255, 255, 0.5);
+                line-height: 1;
+                margin-top: 40px;
+              }
+              .css-jstu5q:hover {
+                -webkit-text-decoration: none;
+                text-decoration: none;
+                background-color: rgba(144, 202, 249, 0.08);
+                border: 1px solid #90caf9;
+              }
+              @media (hover: none) {
+                .css-jstu5q:hover {
+                  background-color: transparent;
+                }
+              }
+              .css-jstu5q.Mui-disabled {
+                color: rgba(255, 255, 255, 0.3);
+                border: 1px solid rgba(255, 255, 255, 0.12);
+              }
+              .css-jstu5q:hover {
+                background-color: transparent;
+              }
+              .css-jstu5q svg {
+                fill: currentColor;
+              }
+              .css-jstu5q svg {
+                fill: currentColor;
+              }
+              .css-jstu5q:hover {
+                background-color: #fff;
+                color: #000;
+              }
+              .css-jstu5q:hover svg {
+                fill: currentColor;
+              }</style
+            ><style data-emotion="css 1613cep">
+              .css-1613cep {
+                display: -webkit-inline-box;
+                display: -webkit-inline-flex;
+                display: -ms-inline-flexbox;
+                display: inline-flex;
+                -webkit-align-items: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                position: relative;
+                box-sizing: border-box;
+                -webkit-tap-highlight-color: transparent;
+                background-color: transparent;
+                outline: 0;
+                border: 0;
+                margin: 0;
+                border-radius: 0;
+                padding: 0;
+                cursor: pointer;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                vertical-align: middle;
+                -moz-appearance: none;
+                -webkit-appearance: none;
+                -webkit-text-decoration: none;
+                text-decoration: none;
+                color: inherit;
+                font-family: Poppins, Helvetica, Arial;
+                font-weight: 500;
+                font-size: 0.875rem;
+                line-height: 1.75;
+                text-transform: uppercase;
+                min-width: 64px;
+                padding: 5px 15px;
+                border-radius: 4px;
+                -webkit-transition: background-color 250ms
+                    cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+                  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+                  border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+                  color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+                    0ms,
+                  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+                  border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+                  color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                border: 1px solid rgba(144, 202, 249, 0.5);
+                color: #90caf9;
+                font-size: 12px;
+                line-height: 1;
+                font-weight: 600;
+                color: #fff;
+                text-transform: none;
+                border-radius: 0;
+                padding: 13px 20px;
+                border: 1px solid rgba(255, 255, 255, 0.5);
+                line-height: 1;
+                margin-top: 40px;
+              }
+              .css-1613cep::-moz-focus-inner {
+                border-style: none;
+              }
+              .css-1613cep.Mui-disabled {
+                pointer-events: none;
+                cursor: default;
+              }
+              @media print {
+                .css-1613cep {
+                  -webkit-print-color-adjust: exact;
+                  color-adjust: exact;
+                }
+              }
+              .css-1613cep:hover {
+                -webkit-text-decoration: none;
+                text-decoration: none;
+                background-color: rgba(144, 202, 249, 0.08);
+                border: 1px solid #90caf9;
+              }
+              @media (hover: none) {
+                .css-1613cep:hover {
+                  background-color: transparent;
+                }
+              }
+              .css-1613cep.Mui-disabled {
+                color: rgba(255, 255, 255, 0.3);
+                border: 1px solid rgba(255, 255, 255, 0.12);
+              }
+              .css-1613cep:hover {
+                background-color: transparent;
+              }
+              .css-1613cep svg {
+                fill: currentColor;
+              }
+              .css-1613cep svg {
+                fill: currentColor;
+              }
+              .css-1613cep:hover {
+                background-color: #fff;
+                color: #000;
+              }
+              .css-1613cep:hover svg {
+                fill: currentColor;
+              }</style
+            ><a
+              class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root css-1613cep"
+              tabindex="0"
+              href="connect"
+              >.contact us<!-- --><style data-emotion="css 4nge2u">
+                .css-4nge2u {
+                  display: inherit;
+                  margin-right: -4px;
+                  margin-left: 8px;
+                  margin-left: 8px;
+                  -webkit-transition: 0.3s ease-in-out;
+                  transition: 0.3s ease-in-out;
+                }
+                .css-4nge2u > *:nth-of-type(1) {
+                  font-size: 20px;
+                }</style
+              ><span
+                class="MuiButton-endIcon MuiButton-iconSizeMedium css-4nge2u"
+                ><svg width="15" height="12" viewBox="0 0 15 12">
+                  <path
+                    d="M9.20599 11.3151L14.3574 5.99997L9.20599 0.684815L8.129 1.79588L11.4357 5.20643L0.593597 5.20643L0.593597 6.79345L11.4357 6.79345L8.129 10.204L9.20599 11.3151Z"
+                  ></path></svg></span
+            ></a>
+          </div>
+        </div>
+        <div
+          data-gatsby-image-wrapper
+          style="
+            width: 1365px;
+            height: 711px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            transform: translate(15%, -20%);
+            z-index: -1;
+            pointer-events: none;
+          "
+          class="gatsby-image-wrapper"
+        >
+          <img
+            aria-hidden="true"
+            data-placeholder-image
+            style="opacity: 1; transition: opacity 500ms linear"
+            decoding="async"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsTAAALEwEAmpwYAAABDUlEQVQoz62SX0vDMADECw5tZ9usMsXSLFnTP4gPe1IQEQK1y9J1r/v+X0UuMzNbuxc18CNwTS65a7yQqyci1k1QNZn3H4PwzTLO9WtA+wzzGJFoq1muV66GC8Sie7HA5+DIpR+W+p6wXkR5V7sEtMnMxoUuYHrUqya7FeuHKP+sLVO+fSRczoxnmu6m2ID4LlgEYDLQ2SaFHheqBDggrOX8GJ3StyAU+mMMf7nlo3qhFhe7PDc0MZl6v3iIaNnJ+kKVp47P+2s3lo2JeK6O/g69daa3mKo7r9Q3npSTHzMpJ4T1iS0dP8gXO4ZboGjMFhgEpabJ9zf0P4ibiJa4TyIx3eyvfvUOh9n/Nr4AHeBPWw3QunoAAAAASUVORK5CYII="
+            alt
+          /><picture
+            ><source
+              type="image/webp"
+              data-srcset="/static/5a8af07b070cb2f9d258e95e2bb71d08/348f4/bricks.webp 1365w"
+              sizes="1365px" />
+            <img
+              data-gatsby-image-ssr
+              layout="fixed"
+              data-main-image
+              style="opacity: 0"
+              sizes="1365px"
+              decoding="async"
+              loading="lazy"
+              data-src="/static/5a8af07b070cb2f9d258e95e2bb71d08/36488/bricks.svg"
+              data-srcset="/static/5a8af07b070cb2f9d258e95e2bb71d08/36488/bricks.svg 1365w"
+              alt /></picture
+          ><noscript
+            ><picture
+              ><source
+                type="image/webp"
+                srcset="
+                  /static/5a8af07b070cb2f9d258e95e2bb71d08/348f4/bricks.webp 1365w
+                "
+                sizes="1365px" />
+              <img
+                data-gatsby-image-ssr=""
+                layout="fixed"
+                data-main-image=""
+                style="opacity: 0"
+                sizes="1365px"
+                decoding="async"
+                loading="lazy"
+                src="/static/5a8af07b070cb2f9d258e95e2bb71d08/36488/bricks.svg"
+                srcset="
+                  /static/5a8af07b070cb2f9d258e95e2bb71d08/36488/bricks.svg 1365w
+                "
+                alt="" /></picture
+          ></noscript>
+          <script type="703515d830fe37bf30c51715-module">
+            const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
+          </script>
+        </div>
+        <style data-emotion="css vueph9">
+          @media (min-width: 0px) {
+            .css-vueph9 {
+              padding-left: 0px;
+              padding-right: 0px;
+              padding-bottom: 20px;
+            }
+          }
+          @media (min-width: 992px) {
+            .css-vueph9 {
+              padding-left: 25px;
+              padding-right: 25px;
+              padding-bottom: 30px;
+            }
+          }
+          @media (min-width: 1400px) {
+            .css-vueph9 {
+              padding-left: 50px;
+              padding-right: 50px;
+              padding-bottom: 50px;
+            }
+          }
+        </style>
+        <footer class="MuiBox-root css-vueph9">
+          <style data-emotion="css aapsoz">
+            .css-aapsoz {
+              border: 1px solid #4b608d;
+              background-color: #091a3d;
+            }
+          </style>
+          <div class="MuiBox-root css-aapsoz">
+            <style data-emotion="css leu4cf">
+              .css-leu4cf {
+                -webkit-box-pack: justify;
+                -webkit-justify-content: space-between;
+                justify-content: space-between;
+              }
+              @media (min-width: 0px) {
+                .css-leu4cf {
+                  padding: 27px 27px 50px;
+                }
+              }
+              @media (min-width: 992px) {
+                .css-leu4cf {
+                  padding: 82px 70px;
+                }
+              }
+              @media (min-width: 1200px) {
+                .css-leu4cf {
+                  display: -webkit-box;
+                  display: -webkit-flex;
+                  display: -ms-flexbox;
+                  display: flex;
+                }
+              }
+              @media (min-width: 1400px) {
+                .css-leu4cf {
+                  padding: 82px 80px;
+                }
+              }
+            </style>
+            <div class="MuiBox-root css-leu4cf">
+              <style data-emotion="css mr12uc">
+                .css-mr12uc {
+                  padding-top: 14px;
+                  width: 100%;
+                  -webkit-flex: 0 0 auto;
+                  -ms-flex: 0 0 auto;
+                  flex: 0 0 auto;
+                }
+                @media (min-width: 0px) {
+                  .css-mr12uc {
+                    max-width: 100%;
+                    margin-bottom: 30px;
+                  }
+                }
+                @media (min-width: 768px) {
+                  .css-mr12uc {
+                    max-width: 489px;
+                  }
+                }
+                @media (min-width: 1200px) {
+                  .css-mr12uc {
+                    margin-bottom: 0px;
+                  }
+                }
+                .css-mr12uc .MuiOutlinedInput-notchedOutline {
+                  height: 40px;
+                }
+                .css-mr12uc .MuiFormControl-root {
+                  height: 40px;
+                }
+                .css-mr12uc .MuiTextField-root {
+                  width: 100%;
+                  background: #0c1f47;
+                  border: 1px solid #4b608d;
+                  color: #fff;
+                }
+                @media (min-width: 0px) {
+                  .css-mr12uc .MuiTextField-root {
+                    max-width: 100%;
+                    margin-right: 0px;
+                    margin-bottom: 10px;
+                  }
+                }
+                @media (min-width: 768px) {
+                  .css-mr12uc .MuiTextField-root {
+                    max-width: 295px;
+                    margin-right: 16px;
+                    margin-bottom: 0px;
+                  }
+                }
+                .css-mr12uc .MuiInputBase-input {
+                  color: #fff;
+                }
+                .css-mr12uc .MuiButton-root {
+                  background-color: #1ce7c2;
+                  color: #091a3d;
+                }
+                @media (min-width: 768px) {
+                  .css-mr12uc .MuiButton-root {
+                    min-width: 178px;
+                  }
+                }
+                .css-mr12uc .MuiButton-root:hover {
+                  background-color: #fff;
+                  color: #091a3d;
+                }
+                @media (min-width: 0px) {
+                  .css-mr12uc .form-container {
+                    -webkit-flex-direction: column;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                  }
+                }
+                @media (min-width: 768px) {
+                  .css-mr12uc .form-container {
+                    -webkit-flex-direction: row;
+                    -ms-flex-direction: row;
+                    flex-direction: row;
+                  }
+                }
+                .css-mr12uc h5 {
+                  font-size: 21px;
+                }
+              </style>
+              <div class="MuiBox-root css-mr12uc"></div>
+              <style data-emotion="css 408cc1">
+                @media (min-width: 768px) {
+                  .css-408cc1 {
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                  }
+                }
+                @media (min-width: 1200px) {
+                  .css-408cc1 {
+                    -webkit-box-pack: end;
+                    -ms-flex-pack: end;
+                    -webkit-justify-content: flex-end;
+                    justify-content: flex-end;
+                  }
+                }
+              </style>
+              <div class="MuiBox-root css-408cc1">
+                <style data-emotion="css 17bzk2b">
+                  @media (min-width: 0px) {
+                    .css-17bzk2b {
+                      padding-right: 0px;
+                    }
+                  }
+                  @media (min-width: 768px) {
+                    .css-17bzk2b {
+                      padding-right: 100px;
+                    }
+                  }
+                  @media (min-width: 1200px) {
+                    .css-17bzk2b {
+                      padding-left: 50px;
+                      padding-right: 0px;
+                    }
+                  }
+                  @media (min-width: 1400px) {
+                    .css-17bzk2b {
+                      padding-left: 100px;
+                    }
+                  }
+                  .css-17bzk2b a:hover {
+                    -webkit-text-decoration: underline;
+                    text-decoration: underline;
+                  }
+                </style>
+                <div class="MuiBox-root css-17bzk2b">
+                  <style data-emotion="css 12n4nr6">
+                    .css-12n4nr6 {
+                      margin: 0;
+                      font-weight: 600;
+                      font-family: Poppins, Helvetica, Arial;
+                      font-size: 1.03125rem;
+                      line-height: 1.1;
+                      letter-spacing: -0.01em;
+                      color: #1ce7c2;
+                      margin-bottom: 8px;
+                    }
+                    @media (min-width: 768px) {
+                      .css-12n4nr6 {
+                        font-size: 1.1364rem;
+                      }
+                    }
+                    @media (min-width: 992px) {
+                      .css-12n4nr6 {
+                        font-size: 1.1364rem;
+                      }
+                    }
+                    @media (min-width: 1280px) {
+                      .css-12n4nr6 {
+                        font-size: 1.1364rem;
+                      }
+                    }
+                  </style>
+                  <h6 class="MuiTypography-root MuiTypography-h6 css-12n4nr6">
+                    Building_
+                  </h6>
+                  <style data-emotion="css 185verm">
+                    .css-185verm {
+                      list-style: none;
+                      margin: 0;
+                      padding: 0;
+                      position: relative;
+                      padding-top: 8px;
+                      padding-bottom: 8px;
+                    }
+                    .css-185verm a {
+                      font-family: Poppins, Helvetica, Arial;
+                      line-height: 2;
+                    }
+                  </style>
+                  <ul class="MuiList-root MuiList-padding css-185verm">
+                    <li class="MuiListItem-root MuiListItem-gutters css-363czb">
+                      <a
+                        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-qndgqm"
+                        href="liquidity-providers"
+                        >Liquidity Providers</a
+                      >
+                    </li>
+                    <li class="MuiListItem-root MuiListItem-gutters css-363czb">
+                      <a
+                        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-qndgqm"
+                        href="validator-insurance"
+                        >Validator Insurance</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <style data-emotion="css csv9a4">
+                  @media (min-width: 0px) {
+                    .css-csv9a4 {
+                      padding-right: 0px;
+                      margin-top: 40px;
+                    }
+                  }
+                  @media (min-width: 768px) {
+                    .css-csv9a4 {
+                      padding-right: 100px;
+                      margin-top: 0px;
+                    }
+                  }
+                  @media (min-width: 1200px) {
+                    .css-csv9a4 {
+                      padding-left: 50px;
+                      padding-right: 0px;
+                    }
+                  }
+                  @media (min-width: 1400px) {
+                    .css-csv9a4 {
+                      padding-left: 100px;
+                    }
+                  }
+                  .css-csv9a4 a:hover {
+                    -webkit-text-decoration: underline;
+                    text-decoration: underline;
+                  }
+                </style>
+                <div class="MuiBox-root css-csv9a4">
+                  <h6 class="MuiTypography-root MuiTypography-h6 css-12n4nr6">
+                    Thinking_
+                  </h6>
+                  <ul class="MuiList-root MuiList-padding css-185verm">
+                    <li class="MuiListItem-root MuiListItem-gutters css-363czb">
+                      <a
+                        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-qndgqm"
+                        href="research"
+                        >Research</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="MuiBox-root css-csv9a4">
+                  <h6 class="MuiTypography-root MuiTypography-h6 css-12n4nr6">
+                    About_
+                  </h6>
+                  <ul class="MuiList-root MuiList-padding css-185verm">
+                    <li class="MuiListItem-root MuiListItem-gutters css-363czb">
+                      <a
+                        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-qndgqm"
+                        href="connect"
+                        >Connect</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <style data-emotion="css 1ydrii2">
+              .css-1ydrii2 {
+                -webkit-box-pack: justify;
+                -webkit-justify-content: space-between;
+                justify-content: space-between;
+                -webkit-align-items: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                border-top: 1px solid #4b608d;
+              }
+              @media (min-width: 0px) {
+                .css-1ydrii2 {
+                  padding-top: 20px;
+                  padding-bottom: 10px;
+                  padding-left: 27px;
+                  padding-right: 27px;
+                }
+              }
+              @media (min-width: 768px) {
+                .css-1ydrii2 {
+                  display: -webkit-box;
+                  display: -webkit-flex;
+                  display: -ms-flexbox;
+                  display: flex;
+                  padding-top: 0px;
+                  padding-bottom: 0px;
+                  padding-left: 0px;
+                  padding-right: 0px;
+                }
+              }
+            </style>
+            <div class="MuiBox-root css-1ydrii2">
+              <style data-emotion="css 1mopsyp">
+                .css-1mopsyp {
+                  background-color: #091a3d;
+                  min-width: 220px;
+                }
+                @media (min-width: 768px) {
+                  .css-1mopsyp {
+                    -webkit-transform: translateY(-31px);
+                    -moz-transform: translateY(-31px);
+                    -ms-transform: translateY(-31px);
+                    transform: translateY(-31px);
+                  }
+                }
+              </style>
+              <div class="MuiBox-root css-1mopsyp">
+                <div class="ft-logo">
+                  <span></span>
+                  <img src="assets/img/logo.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="MuiBox-root css-5g77he">
+            <div class="MuiBox-root css-nr9hu4">
+              <a
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ch5ulv"
+                href="terms-of-use"
+                >Terms of Use_</a
+              ><a
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ch5ulv"
+                href="data-protection-and-privacy-policy"
+                >Privacy Policy_</a
+              ><a
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ch5ulv"
+                href="nfa"
+                >Disclaimers_</a
+              >
+            </div>
+            <p class="MuiTypography-root MuiTypography-body1 css-1jj1qfv">
+              ©
+              <!-- -->2024<!-- -->
+              Stablecoin Labs Inc. Reg number: 5622843. All Rights Reserved.<!-- -->
+            </p>
+          </div>
+          <div class="MuiBox-root css-wllrbn">
+            <p class="MuiTypography-root MuiTypography-body1 css-11je6dg">
+              Stablecoin Labs does not hold any funds from external investors. All operations conducted by any individual, company, or application under Stablecoin Labs' contract remain under the full control and custody of the validator at all times.
+            </p>
+          </div>
+        </footer>
+      </main>
+    </div>
+
+    <!-- All Js Here -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/typed.umd.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
